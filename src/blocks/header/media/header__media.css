@@ -1,0 +1,17 @@
+@media screen and  (max-width: 1024px){
+  .header__title{
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .header__logo{
+    background-image: url('../../../images/logo64x64.png');
+    width: 64px;
+    height: 64px;
+  }
+
+  .header__social-logo{
+    display: none;
+  }
+}
