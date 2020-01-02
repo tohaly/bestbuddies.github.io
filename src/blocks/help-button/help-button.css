@@ -1,0 +1,15 @@
+.help-button{
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: bold;
+  color: #FC691B;
+  border: 2px solid #FC691B;
+  border-radius: 4px;
+  right: 0;
+  top: 36px;
+  box-sizing: border-box;
+}
