@@ -1,0 +1,12 @@
+@import url('./__card-caption/donation__card-caption.css');
+@import url('./__card-pic/donation__card-pic.css');
+@import url('./__card/donation__card.css');
+@import url('./__cards/donation__cards.css');
+@import url('./__container/donation__container.css');
+@import url('./__email/donation__email.css');
+@import url('./__text/donation__text.css');
+
+.donation {
+  font-family: HelveticaNeueCyr;
+  color: #333235;
+}

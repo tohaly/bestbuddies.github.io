@@ -13,7 +13,7 @@
 
   <body>
     <div class="page">
-      <header class="header">
+      <!-- <header class="header">
         <img src="<%=require('./images/logo.svg').default%>" alt="Logo" class="logo" />
         <div class="header__title">
           <h1 class="title">
@@ -33,7 +33,71 @@
           </svg>
         </span>
         <button class="help-button">Помочь</button>
-      </header>
+      </header> -->
+
+      <section class="training">
+        <div class="training__container">
+          <div class="training__wrapper">
+            <img src="<%=require('./images/training/Jaroslav.png').default%>" alt="Ярослав Беляков" class="training__photo">
+            <h3 class="training__name">Ярослав Беляков, тренер по волейболу:</h3>
+            <p class="training__text">Нашим ребятам очень нужен спорт, как и любым другим городским жителям. Но не так уж просто взять и заняться им, особенно
+            если сам не осознаешь эту необходимость. А вот у нас ребята могут хотя бы раз в неделю как следует размяться и
+            потренироваться. К тому же каждый старается и выкладывается на полную, чтобы не подводить остальных, поэтому игры
+            получаются азартными напряженными и интересными.
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="donation">
+        <div class="donation__container">
+          <p class="donation__text">Помочь ребятам с нарушением развития и интеллекта заниматься спортом можно не только пожертвованиями. По всем вопросам
+          помощи обращайтесь к координатору проекта:</p>
+          <span class="donation__email">diana@bestbuddies.ru</span>
+          <div class="donation__cards">
+            <div class="donation__card">
+              <img src="<%=require('./images/donation/rooms.png').default%>" alt="Помещения" class="donation__card-pic">
+              <p class="donation__card-caption">Помочь
+              с&nbsp;помещением для занятий</p>
+            </div>
+            <div class="donation__card">
+              <img src="<%=require('./images/donation/different.png').default%>" alt="Инвентарь" class="donation__card-pic">
+              <p class="donation__card-caption">Подарить инвентарь</p>
+            </div>
+            <div class="donation__card">
+              <img src="<%=require('./images/donation/volunteers.png').default%>" alt="Волонтеры" class="donation__card-pic">
+              <p class="donation__card-caption">Стать спортивным волонтёром</p>
+            </div>
+            <div class="donation__card">
+              <img src="<%=require('./images/donation/partnership.png').default%>" alt="Партнеры" class="donation__card-pic">
+              <p class="donation__card-caption">Стать партнёром проекта</p>
+            </div>
+          </div>
+          <p class="donation__text">Расскажите о проекте друзьям и знакомым в социальных сетях:</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <footer class="footer">
         <div class="footer__container">
