@@ -1,0 +1,24 @@
+.up-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: 24px;
+  right: 104px;
+}
+
+@media screen and (max-width: 1024px) {
+  .up-button {
+    right: 36px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .up-button {
+    position: static;
+    margin-top: 52px;
+  }
+}

@@ -1,0 +1,9 @@
+.logo {
+  width: 68px;
+  object-fit: contain;
+}
+
+.logo_position_footer {
+  width: 102px;
+  height: 114px;
+}

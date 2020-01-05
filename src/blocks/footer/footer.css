@@ -1,0 +1,10 @@
+@import url('./__contacts/footer__contacts.css');
+@import url('./__container/footer__container.css');
+@import url('./__social-item/footer__social-item.css');
+@import url('./__social-list/footer__social-list.css');
+@import url('./__info-wrapper/footer__info-wrapper.css');
+
+.footer {
+  font-family: HelveticaNeueCyr;
+  background: #d2d4eb;
+}

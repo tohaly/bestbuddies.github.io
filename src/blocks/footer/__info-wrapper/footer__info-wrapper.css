@@ -1,0 +1,32 @@
+.footer__info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 264px));
+  grid-template-rows: auto;
+  grid-template-areas:
+    'contacts title'
+    'contacts subtitle'
+    'contacts social';
+  grid-column-gap: 17%;
+
+  margin-left: 10%;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__info-wrapper {
+    grid-template-columns: 264px;
+    grid-template-areas:
+      'title'
+      'subtitle'
+      'contacts'
+      'social';
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer__info-wrapper {
+    margin: 36px 0 48px;
+    justify-items: center;
+  }
+}

@@ -1,5 +1,12 @@
-@media screen and (max-width: 660px){
-  .title{
+@media screen and (max-width: 660px) {
+  .title {
     display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .title_position_footer {
+    display: block;
+    text-align: center;
   }
 }
