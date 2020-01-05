@@ -1,8 +1,15 @@
-.subtitle{
+.subtitle {
   font-size: 0.8rem;
-  color: #5A3F98;
+  color: #5a3f98;
   font-style: normal;
   font-weight: normal;
   line-height: 1.1;
   margin: 4px 0 0;
+  grid-area: subtitle;
+}
+
+.subtitle_position_footer {
+  max-width: 264px;
+  line-height: 20px;
+  color: #333235;
 }

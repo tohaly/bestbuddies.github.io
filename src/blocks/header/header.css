@@ -1,10 +1,12 @@
-@import url('./__logo/header__logo.css');
 @import url('./__title/header__title.css');
 @import url('./__social-logo/header__social-logo.css');
 
-.header{
-  max-width: 1240px;
+.header {
+  max-width: 1440px;
   display: flex;
-  margin: auto;
-  position: relative;
+  margin: 0 auto;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+  padding: 20px 100px 0;
 }

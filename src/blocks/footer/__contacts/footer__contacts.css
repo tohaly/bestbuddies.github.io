@@ -1,0 +1,34 @@
+.footer__contacts {
+  max-width: 264px;
+  margin: 0;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #333235;
+  grid-area: contacts;
+}
+
+.footer__contacts_type_bold {
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+.footer__contacts_type_bold:last-of-type {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__contacts {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer__contacts {
+    text-align: center;
+  }
+}
