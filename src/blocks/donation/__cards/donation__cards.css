@@ -1,0 +1,14 @@
+.donation__cards {
+  display: grid;
+  margin-bottom: 48px;
+  grid-template-columns: repeat(auto-fit, 276px);
+  grid-column-gap: 44px;
+  grid-row-gap: 32px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .donation__cards {
+    margin-bottom: 40px;
+  }
+}
