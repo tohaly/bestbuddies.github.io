@@ -1,0 +1,6 @@
+.training__wrapper {
+  display: grid;
+  grid-template-areas:
+    'photo heading'
+    'photo text';
+}

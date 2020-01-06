@@ -1,0 +1,19 @@
+.social__item {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.social__item_position_footer {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.social__item:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .social__item_position_footer {
+    margin-right: 32px;
+  }
+}
