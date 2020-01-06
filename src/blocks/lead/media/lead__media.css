@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px){
+  .lead__container{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .lead__content{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .lead__container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .lead__video{
+    padding-top: 78%;
+  }
+}

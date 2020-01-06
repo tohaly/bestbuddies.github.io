@@ -1,12 +1,22 @@
 @media screen and  (max-width: 1024px){
+  .header__container{
+    padding-right: 32px;
+    padding-left: 32px;
+  }
   .header__title{
-    margin-top: 36px;
+    margin-left: 40px;
+  }
+  .header__social-logo{
+    margin-right: 48px;
   }
 }
 
 @media screen and (max-width: 660px){
+  .header__container{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
   .header__logo{
-    background-image: url('../../../images/logo64x64.png');
     width: 64px;
     height: 64px;
   }

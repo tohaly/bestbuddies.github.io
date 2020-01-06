@@ -1,0 +1,6 @@
+@import url('./__paragraph/text-content__paragraph.css');
+
+.text-content{
+  display: flex;
+  flex-direction: column;
+}
