@@ -8,6 +8,14 @@
 @import url('../blocks/lead/lead.css');
 @import url('../blocks/text-content/text-content.css');
 @import url('../blocks/text-content/_lead/text-content_lead.css');
+@import url('../blocks/text-content/_card/text-content_card.css');
+@import url('../blocks//description/description.css');
+@import url('../blocks/card/card.css');
+
+@import url('../blocks/estimates/estimates.css');
+@import url('../blocks/estimate-block/estimate-block.css');
+
+@import url('../blocks/training/training.css');
 @import url('../blocks/up-button/up-button.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/social/social.css');
@@ -19,4 +27,8 @@
 html {
   font-size: 18px;
   width: 100%;
+}
+
+.page{
+  font-family: 'HelveticaNeueCyr';
 }

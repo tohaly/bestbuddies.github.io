@@ -1,0 +1,9 @@
+.estimate-block__item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.estimate-block__item:last-of-type{
+  margin-bottom: 0;
+}

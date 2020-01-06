@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px){  
+  .card{
+    flex-direction: column;
+  }
+  .card_reverse{
+    flex-direction: column-reverse;
+  }
+}

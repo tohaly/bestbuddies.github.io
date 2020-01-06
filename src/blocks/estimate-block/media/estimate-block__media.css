@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px){
+  .estimate-block{
+    margin-bottom: 24px;
+  }
+  .estimate-block:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .estimate-block__title{
+    font-size: 1rem;
+  }
+  .estimate-block__text{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .estimate-block__total{
+    font-size: 1rem;
+  }
+  .estimate-block__total::before{
+    margin-top: 24px;
+  }
+  .estimate-block__item{
+    margin-bottom: 16px;
+  }
+  .estimate-block{
+    padding: 24px 20px 32px;
+  }
+}

@@ -1,6 +1,5 @@
 .text-content_lead{
   padding-right: 16px;
   max-width: 272px;  
-  justify-content: flex-end;  
-  align-self: stretch;
+  justify-content: flex-end;
 }

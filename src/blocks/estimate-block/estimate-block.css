@@ -1,0 +1,12 @@
+@import url('./__item/estimate-block__item.css');
+@import url('./__title/estimate-block__title.css');
+@import url('./__total/estimate-block__total.css');
+
+.estimate-block{
+  max-width: 548px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 36px 48px;
+  background-color: #fff;
+  border-radius: 8px;
+}

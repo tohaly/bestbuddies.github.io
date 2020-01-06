@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px){
+  .description__container{
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .description__margin-right{
+    margin-right: 0;
+  }
+}

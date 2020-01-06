@@ -1,5 +1,29 @@
 @media screen and (max-width: 1024px){
   .text-content_lead{
-    display: none;
+    background-color: #B0EDDB;
+    padding: 48px 56px;
+    max-width: 560px;
+    box-sizing: border-box;
+    align-self: center;
+    margin-top: 40px;
+  }
+  .text-content_card{
+    max-width: 500px;
+    margin-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .text-content_lead{
+    padding: 32px 24px;
+  }
+  .text-content__title_traning{
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+  .text-content__paragraph{
+    font-size: 0.9rem;
   }
 }

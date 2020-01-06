@@ -2,6 +2,7 @@
   .lead__container{
     padding-left: 32px;
     padding-right: 32px;
+    flex-direction: column-reverse;
   }
   .lead__content{
     margin: 0 auto;
