@@ -1,0 +1,9 @@
+.lead__container{
+  max-width: 1440px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 188px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}

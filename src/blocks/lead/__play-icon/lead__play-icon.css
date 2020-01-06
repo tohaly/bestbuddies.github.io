@@ -1,0 +1,13 @@
+.lead__play-icon{
+  margin-left: 20px;
+  margin-right: 12px;
+  width: 16px;
+  height: 20px;
+  background-image: url('../../../images/play__icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lead__button:hover .lead__play-icon{
+  background-image: url('../../../images/play__icon_hover.svg');
+}

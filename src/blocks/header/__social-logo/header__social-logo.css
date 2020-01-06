@@ -1,5 +1,5 @@
 .header__social-logo {
-  text-anchor: middle;
+  margin: 0 56px 0 0;
   line-height: 40px;
-  padding-top: 6px;
+  padding-top: 10px;
 }

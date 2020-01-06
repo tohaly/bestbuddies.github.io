@@ -13,28 +13,48 @@
 
   <body>
     <div class="page">
-      <!-- <header class="header">
-        <img src="<%=require('./images/logo.svg').default%>" alt="Logo" class="logo" />
-        <div class="header__title">
-          <h1 class="title">
-            Лучшие <span class="title__bold">друзья</span> Best </span>
-            <span class="title__bold">buddies</span> Russia
-          </h1>
-          <p class="subtitle">
-            Фонд поддержки лиц с нарушениями развития и интеллекта
-          </p>
+      <div class="header">
+        <header class="header__container">
+          <img src="<%=require('./images/logo.svg').default%>" alt="Logo" class="logo" />
+          <div class="header__title">
+            <h1 class="title">
+              Лучшие <span class="title__bold">друзья</span> Best </span>
+              <span class="title__bold">buddies</span> Russia
+            </h1>
+            <p class="subtitle">
+              Фонд поддержки лиц с нарушениями развития и интеллекта
+            </p>
+          </div>
+          <span class="header__social-logo">
+            <svg width="24" height="28" fill="none">
+              <path
+                d="M20 19.44c-1.01 0-1.92.4-2.61 1.03l-9.51-5.54c.07-.3.12-.61.12-.93 0-.32-.05-.63-.12-.93l9.4-5.48A3.98 3.98 0 0024 4.67a4 4 0 10-7.88.93l-9.4 5.48A3.98 3.98 0 000 14a4 4 0 006.72 2.92l9.5 5.53A3.89 3.89 0 1020 19.44z"
+                fill="#5A3F98"
+              />
+            </svg>
+          </span>
+          <button class="help-button">Помочь</button>
+        </header>
+      </div>
+      <section class="lead">
+        <div class="lead__container">
+          <div class="text-content text-content_lead">
+            <p class="text-content__paragraph">
+              Фонд «Лучшие друзья» проводит регулярные занятия по футболу и волейболу для людей с нарушением развития и без. Постоянные занятия требуют регулярных расходов. <span class="title__bold">Поэтому нужна ваша помощь.</span>
+            </p>
+            <p class="text-content__paragraph">
+              Чтобы у ребят была возможность тренироваться в течение года,<span class="title__bold">необходимо собрать 765 536 руб.</span>
+            </p>
+          </div>
+            <div class="lead__content">
+              <button class="button lead__button">
+                <span class="lead__play-icon"></span> Смотреть видео
+              </button>
+              <div class="lead__video"></div>
+            </div>
         </div>
-        <span class="header__social-logo">
-          <svg width="24" height="28" fill="none">
-            <path
-              d="M20 19.44c-1.01 0-1.92.4-2.61 1.03l-9.51-5.54c.07-.3.12-.61.12-.93 0-.32-.05-.63-.12-.93l9.4-5.48A3.98 3.98 0 0024 4.67a4 4 0 10-7.88.93l-9.4 5.48A3.98 3.98 0 000 14a4 4 0 006.72 2.92l9.5 5.53A3.89 3.89 0 1020 19.44z"
-              fill="#5A3F98"
-            />
-          </svg>
-        </span>
-        <button class="help-button">Помочь</button>
-      </header> -->
-
+      </section>
+  
       <section class="training">
         <div class="training__container">
           <div class="training__wrapper">
