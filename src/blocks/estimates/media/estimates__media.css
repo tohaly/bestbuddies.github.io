@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px){
+  .estimates__content{
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+  .estimates__container{
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .estimates__container{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .estimates{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}

@@ -4,8 +4,10 @@
   font-style: normal;
   font-weight: normal;
   margin: 0;
+  margin-bottom: 24px;
+  letter-spacing: 0.25px;
 }
 
 .text-content__paragraph:last-of-type{
-  margin-top: 24px;
+  margin-bottom: 0;
 }

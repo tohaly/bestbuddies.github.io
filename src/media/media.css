@@ -3,3 +3,8 @@
 @import url('../blocks/header/media/header__media.css');
 @import url('../blocks/text-content/media/text-content__media.css');
 @import url('../blocks/lead/media/lead__media.css');
+@import url('../blocks/description/media/description__media.css');
+@import url('../blocks/card/media/card__media.css');
+@import url('../blocks/estimates/media/estimates__media.css');
+@import url('../blocks/training/media/training__media.css.css');
+@import url('../blocks/estimate-block/media/estimate-block__media.css');

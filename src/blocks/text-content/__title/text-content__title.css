@@ -1,0 +1,9 @@
+.text-content__title{
+  margin: 20px 0 44px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+  color: #5A3F98;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

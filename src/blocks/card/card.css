@@ -1,0 +1,7 @@
+@import url('./card__img/card__img.css');
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 176px;
+}
