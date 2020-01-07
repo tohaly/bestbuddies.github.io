@@ -1,0 +1,15 @@
+.header__sahre-icon{
+  display: inline-block;
+  background-image: url('../../../images/share__icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 28px;
+  margin: 0 56px 0 0;
+  cursor: pointer;
+}
+
+.header__sahre-icon:hover{
+  background-image: url('../../../images/share__icon_hover.svg');
+}

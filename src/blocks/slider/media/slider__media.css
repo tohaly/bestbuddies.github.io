@@ -1,0 +1,18 @@
+@media screen and (max-width: 1180px){  
+  .slider-remote{
+    align-self: center;
+  }
+  .slider-remote__arrow{
+    display: none;
+  }
+}
+@media screen and (max-width: 660px){  
+  .slider-remote__circle{
+    width: 8px;
+    height: 8px;
+    margin-right: 24px;
+  }
+  .slider-remote{
+    margin-top: 24px;
+  }
+}

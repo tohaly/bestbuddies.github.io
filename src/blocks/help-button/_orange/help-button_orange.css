@@ -1,0 +1,10 @@
+.help-button_orange{
+  color: #fff;
+  background-color: #fc691b;
+}
+
+.help-button_orange:hover{
+  background-color: #5A3F98;
+  color: #fff;
+  border: none;
+}

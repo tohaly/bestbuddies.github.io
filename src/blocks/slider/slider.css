@@ -1,0 +1,8 @@
+@import url('./slider-remote/slider-remote.css');
+@import url('./__img/slider__img.css');
+
+.slider{
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+}

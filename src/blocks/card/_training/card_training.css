@@ -1,0 +1,7 @@
+.card_training{
+  margin-bottom: 60px;
+}
+
+.card_training:last-of-type{
+  margin-bottom: 0;
+}
