@@ -1,8 +1,8 @@
 .description__container{
   max-width: 1440px;
-  padding: 0 100px;
-  margin: 80px auto 0;
+  padding: 55px 100px 36px;
   display: flex;
-  flex-direction: column;
   box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: space-between;
 }

@@ -1,4 +1,6 @@
 @import url('./__paragraph/text-content__paragraph.css');
+@import url('./__paragraph/_orange/text-content__paragraph_orange.css');
+@import url('./__paragraph/_bold/text-content__paragraph_bold.css');
 @import url('./__title/text-content__title.css');
 @import url('./__title/_training/text-content__title_traning.css');
 

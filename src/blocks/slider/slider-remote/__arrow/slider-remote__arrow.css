@@ -1,0 +1,7 @@
+.slider-remote__arrow{
+  background-image: url('../../../../images/slider/arrow.svg');
+  width: 16px;
+  height: 16px;
+  cursor: pointer;  
+  margin-right: 28px;
+}

@@ -1,7 +1,12 @@
 @import url('./card__img/card__img.css');
+@import url('./_training/card_training.css');
 
 .card{
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 176px;
+  margin-bottom: 60px;
+}
+.card:last-of-type{
+  margin-bottom: 0;
 }

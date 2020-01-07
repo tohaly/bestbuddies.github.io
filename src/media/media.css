@@ -1,3 +1,4 @@
+@import url('../blocks/section/media/section__media.css');
 @import url('../blocks/title/media/title__media.css');
 @import url('../blocks/subtitle/media/subtitle__media.css');
 @import url('../blocks/header/media/header__media.css');
@@ -5,6 +6,7 @@
 @import url('../blocks/lead/media/lead__media.css');
 @import url('../blocks/description/media/description__media.css');
 @import url('../blocks/card/media/card__media.css');
+@import url('../blocks/slider/media/slider__media.css');
 @import url('../blocks/estimates/media/estimates__media.css');
 @import url('../blocks/training/media/training__media.css.css');
 @import url('../blocks/estimate-block/media/estimate-block__media.css');

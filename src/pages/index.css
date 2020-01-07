@@ -4,14 +4,17 @@
 @import url('../blocks/title/title.css');
 @import url('../blocks/subtitle/subtitle.css');
 @import url('../blocks/help-button/help-button.css');
+@import url('../blocks/help-button/_orange/help-button_orange.css');
 @import url('../blocks/logo/logo.css');
 @import url('../blocks/lead/lead.css');
 @import url('../blocks/text-content/text-content.css');
 @import url('../blocks/text-content/_lead/text-content_lead.css');
-@import url('../blocks/text-content/_card/text-content_card.css');
+@import url('../blocks/text-content/_description/text-content_description.css');
+@import url('../blocks/text-content/training/text-content__training.css');
+@import url('../blocks/text-content/_slider/text-content_slider.css');
 @import url('../blocks//description/description.css');
 @import url('../blocks/card/card.css');
-
+@import url('../blocks/slider/slider.css');
 @import url('../blocks/estimates/estimates.css');
 @import url('../blocks/estimate-block/estimate-block.css');
 
@@ -21,6 +24,7 @@
 @import url('../blocks/social/social.css');
 @import url('../blocks/donation/donation.css');
 @import url('../blocks/training/training.css');
+@import url('../blocks/section/section.css');
 
 @import url('../media/media.css');
 

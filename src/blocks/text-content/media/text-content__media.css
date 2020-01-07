@@ -1,3 +1,12 @@
+@media screen and (max-width: 1180px){
+  .text-content_slider{
+    max-width: 548px;
+    margin-left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 48px;
+  }
+}
 @media screen and (max-width: 1024px){
   .text-content_lead{
     background-color: #B0EDDB;
@@ -7,14 +16,22 @@
     align-self: center;
     margin-top: 40px;
   }
-  .text-content_card{
-    max-width: 500px;
+  .text-content_description{
+    max-width: 568px;
     margin-top: 32px;
     padding-left: 24px;
     padding-right: 24px;
   }
+  .text-content_training{
+    margin-left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .text-content__title_traning{
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
 }
-
 @media screen and (max-width: 660px){
   .text-content_lead{
     padding: 32px 24px;
@@ -22,8 +39,14 @@
   .text-content__title_traning{
     font-size: 1rem;
     letter-spacing: normal;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    max-width: 250px;
   }
   .text-content__paragraph{
     font-size: 0.9rem;
+  }
+  .text-content_slider{
+    margin-top: 40px;
   }
 }

@@ -13,7 +13,11 @@
   cursor: pointer;
 }
 
-.help-button_type_active {
+.help-button:hover {
   color: #ffffff;
   background-color: #fc691b;
+}
+
+.help-button:active{
+  color: #000;
 }

@@ -1,6 +1,8 @@
 @media screen and (max-width: 1024px){  
   .card{
+    max-width: 568px;
     flex-direction: column;
+    margin-bottom: 32px;
   }
   .card_reverse{
     flex-direction: column-reverse;

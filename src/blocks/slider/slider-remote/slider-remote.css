@@ -1,0 +1,10 @@
+@import url('./__arrow/slider-remote__arrow.css');
+@import url('./__arrow/_right/slider-remote__arrow_right.css');
+@import url('./__circle/slider-remote__circle.css');
+@import url('./__circle/_active/slider-remote__circle_active.css');
+
+.slider-remote{
+  display: flex;
+  align-self: flex-end;
+  margin-top: 20px;
+}
