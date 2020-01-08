@@ -1,0 +1,6 @@
+.popup__sum-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 16px 16px;
+  margin-bottom: 40px;
+}

@@ -9,22 +9,3 @@
   text-align: center;
   letter-spacing: 0.25px;
 }
-
-@media screen and (max-width: 768px) {
-  .donation__text {
-    max-width: 608px;
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .donation__text {
-    text-align: left;
-    font-size: 16px;
-  }
-}
-
-.donation__text:last-of-type {
-  margin-bottom: 16px;
-  text-align: center;
-}

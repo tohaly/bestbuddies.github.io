@@ -20,15 +20,3 @@
 .footer__contacts_type_bold:last-of-type {
   margin-top: 0;
 }
-
-@media screen and (max-width: 1024px) {
-  .footer__contacts {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .footer__contacts {
-    text-align: center;
-  }
-}

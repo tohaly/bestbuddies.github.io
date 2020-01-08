@@ -1,13 +1,14 @@
 .social__list {
-  margin: 24px 0 120px;
   list-style-type: none;
   padding: 0;
-  grid-area: social;
+  margin: 24px 0 0;
+}
+
+.social__list_position_donation {
+  margin-bottom: 120px;
   text-align: center;
 }
 
-@media screen and (max-width: 425px) {
-  .social__list {
-    margin-bottom: 100px;
-  }
+.social__list_position_footer {
+  grid-area: social;
 }

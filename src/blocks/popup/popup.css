@@ -1,0 +1,31 @@
+@import url('./__content/popup__content.css');
+@import url('./__close/popup__close.css');
+@import url('./__title/popup__title.css');
+@import url('./__payment-switch/popup__payment-switch.css');
+@import url('./__payment-type/popup__payment-type.css');
+@import url('./__payment-wrapper/popup__payment-wrapper.css');
+@import url('./__sum-button/popup__sum-button.css');
+@import url('./__input/popup__input.css');
+@import url('./__input-wrapper/popup__input-wrapper.css');
+@import url('./__input-tag/popup__input-tag.css');
+@import url('./__sum-wrapper/popup__sum-wrapper.css');
+@import url('./__error/popup__error.css');
+@import url('./__text/popup__text.css');
+@import url('./__form/popup__form.css');
+@import url('./__submit/popup__submit.css');
+@import url('./__submit-wrapper/popup__submit-wrapper.css');
+@import url('./__accept-tag/popup__accept-tag.css');
+
+.popup {
+  font-family: HelveticaNeueCyr;
+  display: flex;
+  background-color: rgba(147, 151, 203, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}

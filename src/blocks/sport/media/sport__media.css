@@ -1,0 +1,11 @@
+@media screen and (max-width: 660px) {
+  .sport {
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sport {
+    margin-bottom: 100px;
+  }
+}

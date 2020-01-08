@@ -6,9 +6,3 @@
   grid-row-gap: 32px;
   justify-content: center;
 }
-
-@media screen and (max-width: 768px) {
-  .donation__cards {
-    margin-bottom: 40px;
-  }
-}

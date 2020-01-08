@@ -12,16 +12,3 @@
 
   color: #5a3f98;
 }
-
-@media screen and (max-width: 768px) {
-  .donation__email {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .donation__email {
-    text-align: left;
-    font-size: 18px;
-  }
-}
