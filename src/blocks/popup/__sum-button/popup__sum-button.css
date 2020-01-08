@@ -15,3 +15,13 @@
   text-align: center;
   color: #fc691b;
 }
+
+.popup__sum-button:hover {
+  background-color: #fc691b;
+  color: #ffffff;
+}
+
+.popup__sum-button:active {
+  background-color: #fc691b;
+  color: #ffffff;
+}

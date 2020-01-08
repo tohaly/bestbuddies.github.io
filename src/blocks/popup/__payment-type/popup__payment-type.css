@@ -3,9 +3,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 1.3;
-  color: #5a3f98;
+  color: #9397cb;
 }
 
 .popup__payment-type:first-of-type {
   margin-right: 40px;
+}
+
+.popup__payment-type_active {
+  color: #5a3f98;
 }

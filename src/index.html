@@ -368,26 +368,23 @@
           </div>
 
           <button class="help-button help-button_orange">Помочь</button>
-          <button class="up-button">
-            <img
-              src="<%=require('./images/up-button.png').default%>"
-              alt="вверх"
-              class=""
-            />
+          <button class="up-button"><a href="#"><img src="<%=require('./images/up-button.png').default%>" alt="вверх" class="" /></a>
           </button>
         </div>
       </footer>
 
-      <div class="popup">
+      <!-- <div class="popup">
         <div class="popup__content">
           <img src="<%=require('./images/popup/close.svg').default%>" alt="Закрыть" class="popup__close">
 
           <form class="popup__form" name="donate" novalidate>
-            <h2 class="popup__title">Спасибо, что решили помочь ребятам с нарушением развития !</h2>
+            <h2 class="popup__title">Спасибо, что решили помочь ребятам с нарушением развития!</h2>
             <div class="popup__payment-wrapper">
-              <span class="popup__payment-type">Банковская карта</span>
+              <span class="popup__payment-type popup__payment-type_active">Банковская карта</span>
               <span class="popup__payment-type">Яндекс.Деньги</span>
-              <div class="popup__payment-switch"></div>
+              <div class="popup__payment-switch">
+                <div class="popup__payment-active"></div>
+              </div>
             </div>
             <div class="popup__sum-wrapper">
               <button class="popup__sum-button">100 ₽</button>
@@ -404,7 +401,8 @@
               <input type="email" placeholder="ivanivanov@gmail.com" class="popup__input">
               <span class="popup__error"></span>
             </div>
-            <p class="popup__text">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать, кого
+            <p class="popup__text">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать,
+              кого
               благодарить и куда
               отправить уведомление о получении пожертвования</p>
             <div class="popup__submit-wrapper">
@@ -412,13 +410,43 @@
               <button class="popup__submit popup__submit_color_white">Помочь один раз</button>
             </div>
             <input type="checkbox" class="popup__accept">
-            <span class="popup__accept-tag">Я принимаю правила, изложенные в <a href="#" class="popup__accept-link">Соглашении&nbsp;об&nbsp;использовании персональных данных</a></span>
+            <span class="popup__accept-tag">Я принимаю правила, изложенные в <a href="#"
+                class="popup__accept-link">Соглашении&nbsp;об&nbsp;использовании персональных данных</a></span>
             <div class="popup__donation-bar"></div>
             <span class="popup__donation-sum">Собрали 3 374 из 764 536 рублей</span>
           </form>
         </div>
-      </div>
+
+        <div class="popup__content">
+        <img src="<%=require('./images/popup/close.svg').default%>" alt="Закрыть" class="popup__close">
+
+        <form class="popup__form" name="donate" novalidate>
+          <h2 class="popup__title">Спасибо, что вы помогаете ребятам с нарушением интеллекта заниматься спортом и развиваться.</h2>
+          <img src="<%=require('./images/video__wrapper.jpg').default%>" alt="Best friends" class="popup__image">
+          <p class="popup__share-text">Расскажите своим друзьям о фонде «Лучшие друзья» и о вашем вкладе:</p>
+          <ul class="social__list social__list_position_form">
+            <li class="social__item social__item_position_donation">
+              <a href="http://twitter.com/" class="social__link">
+                <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item social__item_position_donation">
+              <a href="http://vk.com/" class="social__link">
+                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item social__item_position_donation">
+              <a href="http://facebook.com/" class="social__link">
+                <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div> -->
     </div>
+
+
+
     <script
       type="module"
       src="<%= htmlWebpackPlugin.files.chunks.main.entry%>"
