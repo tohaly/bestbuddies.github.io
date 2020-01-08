@@ -35,4 +35,7 @@
   .popup__payment-type:first-of-type {
     margin-right: 28px;
   }
+  .popup__donation-bar {
+    margin: 60px 0 16px;
+  }
 }

@@ -15,10 +15,14 @@
 @import url('./__submit/popup__submit.css');
 @import url('./__submit-wrapper/popup__submit-wrapper.css');
 @import url('./__accept-tag/popup__accept-tag.css');
+@import url('./__donation-bar/popup__donation-bar.css');
+@import url('./__donation-sum/popup__donation-sum.css');
+@import url('./__payment-active/popup__payment-active.css');
+@import url('./__image/popup__image.css');
 
 .popup {
-  font-family: HelveticaNeueCyr;
   display: flex;
+  font-family: HelveticaNeueCyr;
   background-color: rgba(147, 151, 203, 0.8);
   position: fixed;
   top: 0;

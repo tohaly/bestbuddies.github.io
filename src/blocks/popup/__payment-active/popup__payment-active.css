@@ -1,0 +1,7 @@
+.popup__payment-active {
+  width: 100%;
+  max-width: 164px;
+  height: 8px;
+  background-color: #5a3f98;
+  transform: translate(0, -25%);
+}
