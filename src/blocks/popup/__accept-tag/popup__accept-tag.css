@@ -1,0 +1,11 @@
+.popup__accept-tag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+
+  color: #333235;
+
+  margin-bottom: 76px;
+}

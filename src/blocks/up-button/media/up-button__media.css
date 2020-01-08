@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+  .up-button {
+    right: 36px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .up-button {
+    position: static;
+    margin-top: 52px;
+  }
+}

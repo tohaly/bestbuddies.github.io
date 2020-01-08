@@ -1,7 +1,7 @@
-.training__container{
+.training__container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 60px 100px 40px;
+  padding: 0 100px 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

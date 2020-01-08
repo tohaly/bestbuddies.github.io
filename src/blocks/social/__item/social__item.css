@@ -3,17 +3,31 @@
   margin-right: 32px;
 }
 
+.social__item:last-of-type {
+  margin-right: 0;
+}
+
 .social__item_position_footer {
   display: inline-block;
   margin-right: 24px;
 }
 
-.social__item:last-of-type {
-  margin-right: 0;
+.social__item_position_footer:hover {
+  filter: invert(29%) sepia(11%) saturate(5113%) hue-rotate(225deg)
+    brightness(91%) contrast(92%);
 }
 
-@media screen and (max-width: 1024px) {
-  .social__item_position_footer {
-    margin-right: 32px;
-  }
+.social__item_position_footer:active {
+  filter: invert(17%) sepia(1%) saturate(1675%) hue-rotate(219deg)
+    brightness(93%) contrast(88%);
+}
+
+.social__item_position_donation:hover {
+  filter: invert(45%) sepia(84%) saturate(1878%) hue-rotate(349deg)
+    brightness(101%) contrast(98%);
+}
+
+.social__item_position_donation:active {
+  filter: invert(45%) sepia(84%) saturate(1878%) hue-rotate(349deg)
+    brightness(101%) contrast(98%);
 }

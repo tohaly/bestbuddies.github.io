@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px) {
+  .footer__contacts {
+    margin-top: 20px;
+  }
+  .footer__container {
+    padding: 48px 32px 52px 40px;
+  }
+  .footer__info-wrapper {
+    grid-template-columns: 264px;
+    grid-template-areas:
+      'title'
+      'subtitle'
+      'contacts'
+      'social';
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer__contacts {
+    text-align: center;
+  }
+  .footer__container {
+    padding: 44px 0 36px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer__info-wrapper {
+    margin: 36px 0 48px;
+    justify-items: center;
+  }
+}

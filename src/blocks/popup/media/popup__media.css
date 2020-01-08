@@ -1,0 +1,38 @@
+@media screen and (max-width: 630px) {
+  .popup__sum-wrapper {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      '. . .'
+      '. custom custom';
+    grid-column-gap: 20px;
+  }
+  .popup__input_custom_sum {
+    grid-area: custom;
+  }
+  .popup__input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .popup__title {
+    margin-bottom: 32px;
+  }
+  .popup__payment-wrapper {
+    margin-bottom: 32px;
+  }
+  .popup__sum-wrapper {
+    margin-bottom: 32px;
+  }
+  .popup__text {
+    margin-bottom: 32px;
+  }
+  .popup__submit-wrapper {
+    margin-bottom: 32px;
+  }
+  .popup__payment-type:first-of-type {
+    margin-right: 28px;
+  }
+}
