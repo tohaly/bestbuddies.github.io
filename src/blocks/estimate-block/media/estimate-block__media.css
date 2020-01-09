@@ -1,6 +1,7 @@
 @media screen and (max-width: 1024px){
   .estimate-block{
     margin-bottom: 24px;
+    margin-right: 0;
   }
   .estimate-block:last-of-type{
     margin-bottom: 0;

@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">    
     <title></title>
-    <link
-      rel="stylesheet"
-      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
-    />
   </head>
   <body>
     <div class="page">
@@ -17,7 +15,7 @@
           <img src="<%=require('./images/logo.svg').default%>" alt="Logo" class="logo" />
           <div class="header__title">
             <h1 class="title">
-              Лучшие <span class="title__bold">друзья</span> Best </span>
+              Лучшие <span class="title__bold">друзья</span> Best
               <span class="title__bold">buddies</span> Russia
             </h1>
             <p class="subtitle">
@@ -25,6 +23,28 @@
             </p>
           </div>
           <span class="header__sahre-icon"></span>
+          <ul class="social__list social__list_position_header social__list_hidden">
+            <li class="social__item social__item_position_donation">
+              <a href="http://twitter.com/" class="social__link">
+                <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item social__item_position_donation">
+              <a href="http://vk.com/" class="social__link">
+                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item social__item_position_donation">
+              <a href="http://facebook.com/" class="social__link">
+                <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
+              </a>
+            </li>
+            <li class="social__item social__item_position_donation">
+              <a href="" class="social__link">
+                <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
+              </a>
+            </li>
+          </ul>
           <button class="help-button">Помочь</button>
         </div>
       </header>
@@ -112,17 +132,27 @@
       </section>
       <section class="desciption section">
         <div class="description__container description__container_slider">
-          <div class="slider">
-            <img src="<%=require('./images/slider/slider__voleybol_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
-            <div class="slider-remote">
-              <div class="slider-remote__arrow"></div>
-              <div class="slider-remote__circle slider-remote__circle_active"></div>
-              <div class="slider-remote__circle"></div>
-              <div class="slider-remote__circle"></div>
-              <div class="slider-remote__circle "></div>
-              <div class="slider-remote__circle"></div>
-              <div class="slider-remote__arrow slider-remote__arrow_right"></div>
+          <div class="slider">            
+            <div class="slider-items">
+              <picture>
+                <img src="./<%=require('./images/slider/720x480/img_1_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
+              </picture>              
+              <img src="./<%=require('./images/slider/720x480/img_2_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
+              <img src="./<%=require('./images/slider/720x480/img_3_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
+              <img src="./<%=require('./images/slider/720x480/img_4_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
+              <img src="./<%=require('./images/slider/720x480/img_5_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
             </div>
+            <div class="slider-remote">
+              <div class="slider-remote__arrow slider-remote__arrow_left"></div>
+              <div class="slider-remote__navigation">
+                <div class="slider-remote__circle"></div>
+                <div class="slider-remote__circle"></div>
+                <div class="slider-remote__circle"></div>
+                <div class="slider-remote__circle "></div>
+                <div class="slider-remote__circle"></div>
+              </div>
+              <div class="slider-remote__arrow slider-remote__arrow_right"></div>
+            </div>            
           </div>
           <div class="text-content text-content_slider">
             <p class="text-content__paragraph">
@@ -337,7 +367,7 @@
                 office@bestbuddies.ru</span>
             </p>
             <h1 class="title title_position_footer">
-              Лучшие <span class="title__bold">друзья</span> Best </span>
+              Лучшие <span class="title__bold">друзья</span> Best
               <span class="title__bold">buddies</span> Russia
             </h1>
             <p class="subtitle subtitle_position_footer">
