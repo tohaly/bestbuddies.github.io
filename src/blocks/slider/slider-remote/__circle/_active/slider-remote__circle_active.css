@@ -2,3 +2,10 @@
   background-color: #5A3F98;
   border-color: #5A3F98;
 }
+
+/* Active navigation cicle for tiny-slider 2.0 */
+
+.tns-nav-active{
+  background-color: #5A3F98;
+  border-color: #5A3F98;
+}
