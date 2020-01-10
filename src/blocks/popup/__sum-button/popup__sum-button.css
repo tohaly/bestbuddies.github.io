@@ -7,6 +7,7 @@
   min-width: 80px;
   height: 44px;
   box-sizing: border-box;
+  position: relative;
 
   font-style: normal;
   font-weight: bold;
@@ -16,12 +17,11 @@
   color: #fc691b;
 }
 
-.popup__sum-button:hover {
-  background-color: #fc691b;
-  color: #ffffff;
+.popup__sum-button_custom {
+  border: none;
 }
 
-.popup__sum-button:active {
+.popup__sum-button:hover {
   background-color: #fc691b;
   color: #ffffff;
 }

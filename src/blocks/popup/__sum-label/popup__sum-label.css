@@ -1,0 +1,11 @@
+.popup__sum-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  padding-top: 7px;
+  box-sizing: border-box;
+}

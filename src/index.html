@@ -432,8 +432,8 @@
         </div>
       </footer>
 
-      <!-- <div class="popup">
-        <div class="popup__content">
+      <div class="popup">
+        <div class="popup__content popup__content_form">
           <img src="<%=require('./images/popup/close.svg').default%>" alt="Закрыть" class="popup__close">
 
           <form class="popup__form" name="donate" novalidate>
@@ -445,19 +445,35 @@
                 <div class="popup__payment-active"></div>
               </div>
             </div>
-            <div class="popup__sum-wrapper">
-              <button class="popup__sum-button">100 ₽</button>
-              <button class="popup__sum-button">300 ₽</button>
-              <button class="popup__sum-button">500 ₽</button>
-              <button class="popup__sum-button">1000 ₽</button>
-              <input type="number" class="popup__input popup__input_custom_sum" placeholder="Ваша сумма">
-            </div>
+            <ul class="popup__sum-wrapper">
+              <li class="popup__sum-button">
+                <input type="radio" class="popup__sum-radio" id='s100' name="sum">
+                <label for="s100" class="popup__sum-label">100 ₽</label>
+              </li>
+              <li class="popup__sum-button">
+                <input type="radio" class="popup__sum-radio" id='s300' name="sum">
+                <label for="s300" class="popup__sum-label">300 ₽</label>
+              </li>
+              <li class="popup__sum-button">
+                <input type="radio" class="popup__sum-radio" id='s500' name="sum" checked>
+                <label for="s500" class="popup__sum-label">500 ₽</label>
+              </li>
+              <li class="popup__sum-button">
+                <input type="radio" class="popup__sum-radio" id='s1000' name="sum">
+                <label for="s1000" class="popup__sum-label">1000 ₽</label>
+              </li>
+              <li class="popup__sum-button popup__sum-button_custom">
+                <input type="number" class="popup__input popup__input_custom_sum" placeholder="Ваша сумма">
+                <img src="<%=require('./images/ruble-icon.png').default%>" alt="" class="popup__input-icon">
+              </li>
+            </ul>
             <div class="popup__input-wrapper">
-              <span class="popup__input-tag">Ваше имя *</span>
-              <input type="text" placeholder="Иван Иванов" class="popup__input">
-              <span class="popup__error">Пожалуйста, заполните поле</span>
-              <span class="popup__input-tag">Ваш e-mail *</span>
-              <input type="email" placeholder="ivanivanov@gmail.com" class="popup__input">
+              <label for="username" class="popup__input-tag">Ваше имя *</label>
+              <input type="text" name="username" placeholder="Иван Иванов" class="popup__input popup__input_name" required>
+              <span class="popup__error"></span>
+              <label for="email" class="popup__input-tag">Ваш e-mail *</label>
+              <input name="email" placeholder="ivanivanov@gmail.com" class="popup__input popup__input_email"
+                pattern="[\w\-\.]{2,}@[\w-]{2,}(\.[\w-]{2,})?\.[\w-]{2,}" required>
               <span class="popup__error"></span>
             </div>
             <p class="popup__text">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать,
@@ -468,7 +484,7 @@
               <button class="popup__submit popup__submit_color_purple">Хочу помогать ежемесячно</button>
               <button class="popup__submit popup__submit_color_white">Помочь один раз</button>
             </div>
-            <input type="checkbox" class="popup__accept">
+            <input type="checkbox" class="popup__accept" required>
             <span class="popup__accept-tag">Я принимаю правила, изложенные в <a href="#"
                 class="popup__accept-link">Соглашении&nbsp;об&nbsp;использовании персональных данных</a></span>
             <div class="popup__donation-bar"></div>
@@ -476,11 +492,19 @@
           </form>
         </div>
 
-        <div class="popup__content">
+
+
+
+      </div>
+    </div>
+
+    <template class="popup-template__success">
+      <div class="popup__content popup__content_success popup__content_is-opened">
         <img src="<%=require('./images/popup/close.svg').default%>" alt="Закрыть" class="popup__close">
 
         <form class="popup__form" name="donate" novalidate>
-          <h2 class="popup__title">Спасибо, что вы помогаете ребятам с нарушением интеллекта заниматься спортом и развиваться.</h2>
+          <h2 class="popup__title">Спасибо, что вы помогаете ребятам с нарушением интеллекта заниматься спортом и
+            развиваться.</h2>
           <img src="<%=require('./images/video__wrapper.jpg').default%>" alt="Best friends" class="popup__image">
           <p class="popup__share-text">Расскажите своим друзьям о фонде «Лучшие друзья» и о вашем вкладе:</p>
           <ul class="social__list social__list_position_form">
@@ -501,11 +525,12 @@
             </li>
           </ul>
         </form>
-      </div> -->
-    </div>
+      </div>
+    </template>
     <script
       type="module"
       src="<%= htmlWebpackPlugin.files.chunks.main.entry%>"
     ></script>
+
   </body>
 </html>

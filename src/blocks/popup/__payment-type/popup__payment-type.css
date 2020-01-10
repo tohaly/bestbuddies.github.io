@@ -4,6 +4,7 @@
   font-size: 18px;
   line-height: 1.3;
   color: #9397cb;
+  cursor: pointer;
 }
 
 .popup__payment-type:first-of-type {
