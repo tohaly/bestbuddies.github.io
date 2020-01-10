@@ -6,4 +6,6 @@
 .estimates{
   background-color: #B0EDDB;
   padding: 56px 0 120px;
+  position: relative;
+  z-index: 1;
 }

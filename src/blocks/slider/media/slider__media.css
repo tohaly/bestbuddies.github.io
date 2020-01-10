@@ -5,6 +5,9 @@
   .slider-remote__arrow{
     display: none;
   }
+  .slider{
+    max-width: 704px;
+  }
 }
 @media screen and (max-width: 660px){  
   .slider-remote__circle{
