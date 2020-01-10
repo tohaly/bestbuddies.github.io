@@ -14,3 +14,7 @@
 .header_up{
   position: static;
 }
+
+.header__place{
+  height: 108px;
+}
