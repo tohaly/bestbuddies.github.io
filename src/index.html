@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="desciption" content="«Лучшие друзья» помогают людям с нарушениями развития познакомиться и подружиться со сверстниками без инвалидности, найти работу и жить самостоятельно.">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">    
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="shortcut icon" href="<%=require('./images/favicon.ico').default%>" type="image/x-icon">
+    <title>Лучшие друзья Россия | Фонд поддержки лиц с интеллектуальными нарушениями</title>
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Лучшие друзья Россия | Фонд поддержки лиц с интеллектуальными нарушениями">
+    <meta property="og:description" content="«Лучшие друзья» помогают людям с нарушениями развития познакомиться и подружиться со сверстниками без инвалидности, найти работу и жить самостоятельно.">
+    <meta property="og:url" content="https://bestbuddies.ru/">
+    <meta property="og:site_name" content="Лучшие друзья">
+    <meta property="og:image" content="https://bestbuddies.ru/wp-content/uploads/2015/03/Facebook-sharing.png">
   </head>
   <body>
     <div class="page">
+      <div style="height: 108px;">
       <header class="header">
         <div class="header__container">
           <img src="<%=require('./images/logo.svg').default%>" alt="Logo" class="logo" />
@@ -24,22 +34,22 @@
           </div>
           <span class="header__sahre-icon"></span>
           <ul class="social__list social__list_position_header social__list_hidden">
-            <li class="social__item social__item_position_donation">
+            <li class="social__item social__item_position_header">
               <a href="http://twitter.com/" class="social__link">
                 <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
               </a>
             </li>
-            <li class="social__item social__item_position_donation">
+            <li class="social__item social__item_position_header">
               <a href="http://vk.com/" class="social__link">
                 <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
               </a>
             </li>
-            <li class="social__item social__item_position_donation">
+            <li class="social__item social__item_position_header">
               <a href="http://facebook.com/" class="social__link">
                 <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
               </a>
             </li>
-            <li class="social__item social__item_position_donation">
+            <li class="social__item social__item_position_header">
               <a href="" class="social__link">
                 <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
               </a>
@@ -48,6 +58,7 @@
           <button class="help-button">Помочь</button>
         </div>
       </header>
+    </div>
       <section class="lead section">
         <div class="lead__container">
           <div class="text-content text-content_lead">
@@ -60,7 +71,7 @@
           </div>
             <div class="lead__content">
               <button class="button lead__button">
-                <span class="lead__play-icon"></span> Смотреть видео
+                <span class="lead__play-icon"></span>&nbsp;Смотреть&nbsp;видео
               </button>
               <div class="lead__video"></div>
             </div>
@@ -134,13 +145,31 @@
         <div class="description__container description__container_slider">
           <div class="slider">            
             <div class="slider-items">
-              <picture>
-                <img src="./<%=require('./images/slider/720x480/img_1_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
-              </picture>              
-              <img src="./<%=require('./images/slider/720x480/img_2_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
-              <img src="./<%=require('./images/slider/720x480/img_3_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
-              <img src="./<%=require('./images/slider/720x480/img_4_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
-              <img src="./<%=require('./images/slider/720x480/img_5_720x480.jpg').default%>" alt="Игра в волейбол" class="slider__img">
+              <picture class="slider__img-wrapper">
+                <source srcset="<%=require('./images/slider/360x244/img_1_360x244.jpg').default%>" media="(max-width: 660px)">
+                <source srcset="<%=require('./images/slider/704x440/img_1_704x440.jpg').default%>" media="(max-width: 1180px)">
+                <img src="<%=require('./images/slider/720x480/img_1_720x480.jpg').default%>" alt="Слайд 1" class="slider__img">
+              </picture>
+              <picture class="slider__img-wrapper">
+                <source srcset="<%=require('./images/slider/360x244/img_2_360x244.jpg').default%>" media="(max-width: 660px)">
+                <source srcset="<%=require('./images/slider/704x440/img_2_704x440.jpg').default%>" media="(max-width: 1180px)">
+                <img src="<%=require('./images/slider/720x480/img_2_720x480.jpg').default%>" alt="Слайд 2" class="slider__img">
+              </picture>
+              <picture class="slider__img-wrapper">
+                <source srcset="<%=require('./images/slider/360x244/img_3_360x244.jpg').default%>" media="(max-width: 660px)">
+                <source srcset="<%=require('./images/slider/704x440/img_3_704x440.jpg').default%>" media="(max-width: 1180px)">
+                <img src="<%=require('./images/slider/720x480/img_3_720x480.jpg').default%>" alt="Слайд 3" class="slider__img">
+              </picture>
+              <picture class="slider__img-wrapper">
+                <source srcset="<%=require('./images/slider/360x244/img_4_360x244.jpg').default%>" media="(max-width: 660px)">
+                <source srcset="<%=require('./images/slider/704x440/img_4_704x440.jpg').default%>" media="(max-width: 1180px)">
+                <img src="<%=require('./images/slider/720x480/img_4_720x480.jpg').default%>" alt="Слайд 4" class="slider__img">
+              </picture>
+              <picture class="slider__img-wrapper">
+                <source srcset="<%=require('./images/slider/360x244/img_5_360x244.jpg').default%>" media="(max-width: 660px)">
+                <source srcset="<%=require('./images/slider/704x440/img_5_704x440.jpg').default%>" media="(max-width: 1180px)">
+                <img src="<%=require('./images/slider/720x480/img_5_720x480.jpg').default%>" alt="Слайд 5" class="slider__img">
+              </picture>
             </div>
             <div class="slider-remote">
               <div class="slider-remote__arrow slider-remote__arrow_left"></div>
@@ -474,9 +503,6 @@
         </form>
       </div> -->
     </div>
-
-
-
     <script
       type="module"
       src="<%= htmlWebpackPlugin.files.chunks.main.entry%>"

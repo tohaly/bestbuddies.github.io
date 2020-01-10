@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (max-width: 767px){
+  .header__sahre-icon{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 660px){
   .header__container{
     padding-right: 16px;
@@ -19,9 +25,5 @@
   .header__logo{
     width: 64px;
     height: 64px;
-  }
-
-  .header__social-logo{
-    display: none;
   }
 }

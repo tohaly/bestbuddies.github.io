@@ -1,6 +1,5 @@
 import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
-
 const slider = tns({
   container: '.slider-items',
   autoplay: false,
