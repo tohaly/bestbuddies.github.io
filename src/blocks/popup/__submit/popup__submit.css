@@ -16,6 +16,7 @@
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .popup__submit_color_purple {
@@ -25,4 +26,14 @@
 
 .popup__submit_color_white {
   color: #9397cb;
+}
+
+.popup__submit_color_purple_active {
+  background-color: #5a3f98;
+  border: 2px solid #5a3f98;
+}
+
+.popup__submit_color_white_active {
+  border: 2px solid #5a3f98;
+  color: #5a3f98;
 }

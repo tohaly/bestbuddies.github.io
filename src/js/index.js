@@ -1,3 +1,10 @@
 import '../pages/index.css';
+import Popup from './popup';
 
-console.log('Hell!');
+const popupContainer = document.querySelector('.popup');
+
+const popup = new Popup(popupContainer);
+
+document.querySelectorAll('.help-button').forEach(button => {
+  button.addEventListener('click', popup.open);
+});
