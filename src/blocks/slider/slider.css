@@ -1,5 +1,6 @@
 @import url('./slider-remote/slider-remote.css');
 @import url('./__img/slider__img.css');
+@import url('./__navigation/slider-remote__navigation.css');
 
 .slider{
   max-width: 720px;

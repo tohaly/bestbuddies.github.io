@@ -1,6 +1,7 @@
 @import url('./__container/header__container.css');
 @import url('./__title/header__title.css');
 @import url('./__sahre-icon/header__sahre-icon.css');
+@import url('./__sahre-icon/_hidden/header__sahre-icon_hidden.css');
 
 .header {
   background-color: #fff;
@@ -8,4 +9,12 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+
+.header_up{
+  position: static;
+}
+
+.header__place{
+  height: 108px;
 }

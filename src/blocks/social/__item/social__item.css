@@ -10,6 +10,7 @@
 .social__item_position_footer {
   display: inline-block;
   margin-right: 24px;
+  transition: filter 0.4s;
 }
 
 .social__item_position_footer:hover {
