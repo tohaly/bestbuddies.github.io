@@ -1,8 +1,8 @@
 .lead__container{
   max-width: 1440px;
+  margin: 0 auto;
   padding: 64px 100px 40px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: 0 auto;
 }
