@@ -7,6 +7,7 @@
     <meta name="desciption" content="«Лучшие друзья» помогают людям с нарушениями развития познакомиться и подружиться со сверстниками без инвалидности, найти работу и жить самостоятельно.">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
     <link rel="shortcut icon" href="<%=require('./images/favicon.ico').default%>" type="image/x-icon">
     <title>Лучшие друзья Россия | Фонд поддержки лиц с интеллектуальными нарушениями</title>
     <meta property="og:locale" content="ru_RU">
@@ -35,23 +36,22 @@
           <span class="header__sahre-icon"></span>
           <ul class="social__list social__list_position_header social__list_hidden">
             <li class="social__item social__item_position_header">
-              <a href="http://twitter.com/" class="social__link">
+              <a href="https://twitter.com/share?url=https://bestbuddies.ru/" class="social__link" class="social__link">
                 <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
               </a>
             </li>
             <li class="social__item social__item_position_header">
-              <a href="http://vk.com/" class="social__link">
-                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
-              </a>
+              <script type="text/javascript">
+                document.write(VK.Share.button({ url: 'https://bestbuddies.ru/', title: 'Лучшие друзья' }, { type: 'custom', text: '<img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />' }));
+              </script>
             </li>
             <li class="social__item social__item_position_header">
-              <a href="http://facebook.com/" class="social__link">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
                 <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
               </a>
             </li>
-            <li class="social__item social__item_position_header">
-              <a href="" class="social__link">
-                <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
+            <li class="social__item social__item_position_donation social__item_copy">
+              <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
               </a>
             </li>
           </ul>
@@ -143,7 +143,7 @@
       </section>
       <section class="desciption section">
         <div class="description__container description__container_slider">
-          <div class="slider">            
+          <div class="slider">
             <div class="slider-items">
               <picture class="slider__img-wrapper">
                 <source srcset="<%=require('./images/slider/360x244/img_1_360x244.jpg').default%>" media="(max-width: 660px)">
@@ -181,7 +181,7 @@
                 <div class="slider-remote__circle"></div>
               </div>
               <div class="slider-remote__arrow slider-remote__arrow_right"></div>
-            </div>            
+            </div>
           </div>
           <div class="text-content text-content_slider">
             <p class="text-content__paragraph">
@@ -286,6 +286,13 @@
         </div>
       </section>
 
+      <section class="form">
+        <div class="form__donation-bar">
+          <div class="form__donation-bar-progress"></div>
+        </div>
+        <span class="form__donation-sum">Собрали 3 374 из 764 536 рублей</span>
+      </section>
+
       <section class="sport">
         <img src="<%=require('./images/sport.png').default%>" alt="Занятие спортом" class="sport__image">
       </section>
@@ -330,11 +337,11 @@
           </div>
         </div>
       </section>
-      <section class="donation section">
+      <section class="donation">
         <div class="donation__container">
           <p class="donation__text">Помочь ребятам с нарушением развития и интеллекта заниматься спортом можно не только пожертвованиями. По всем вопросам
           помощи обращайтесь к координатору проекта:</p>
-          <span class="donation__email">diana@bestbuddies.ru</span>
+          <a href="mailto:diana@bestbuddies.ru" class="donation__email">diana@bestbuddies.ru</a>
           <div class="donation__cards">
             <div class="donation__card">
               <img src="<%=require('./images/donation/rooms.png').default%>" alt="Помещения" class="donation__card-pic">
@@ -357,23 +364,22 @@
           <p class="donation__text">Расскажите о проекте друзьям и знакомым в социальных сетях:</p>
           <ul class="social__list social__list_position_donation">
             <li class="social__item social__item_position_donation">
-              <a href="http://twitter.com/" class="social__link">
+              <a href="https://twitter.com/share?url=https://bestbuddies.ru/" class="social__link" class="social__link">
                 <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
               </a>
             </li>
             <li class="social__item social__item_position_donation">
-              <a href="http://vk.com/" class="social__link">
-                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
-              </a>
+              <script type="text/javascript">
+                document.write(VK.Share.button({ url: 'https://bestbuddies.ru/', title: 'Лучшие друзья' }, { type: 'custom', text: '<img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />' }));
+              </script>
             </li>
             <li class="social__item social__item_position_donation">
-              <a href="http://facebook.com/" class="social__link">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
                 <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
               </a>
             </li>
-            <li class="social__item social__item_position_donation">
-              <a href="" class="social__link">
-                <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
+            <li class="social__item social__item_position_donation social__item_copy">
+              <img src="<%=require('./images/social/share.png').default%>" alt="share link" class="social__icon" />
               </a>
             </li>
           </ul>
@@ -387,16 +393,15 @@
             class="logo logo_position_footer"
           />
           <div class="footer__info-wrapper">
-            <p class="footer__contacts">
-              115114, Москва, ул. Летниковская, дом&nbsp;11/10, строение 5, подъезд №1
-              (в&nbsp;бизнес-центре «Capital House»)
-
-              <span class="footer__contacts footer__contacts_type_bold">+7(495)725-39-82</span>
-              <span class="footer__contacts footer__contacts_type_bold">
-                office@bestbuddies.ru</span>
-            </p>
-            <div class="title title_position_footer">
-              Лучшие <span class="title__bold">друзья</span><br> Best
+            <div class="footer__contacts">
+              <p class="footer__address">115114, Москва, ул. Летниковская, дом&nbsp;11/10, строение 5, подъезд №1
+              (в&nbsp;бизнес-центре «Capital House»)</p>
+              <a href="tel:+7(495)725-39-82" class="footer__contacts footer__contacts_type_bold">+7(495)725-39-82</a>
+              <a href="mailto:office@bestbuddies.ru" class="footer__contacts footer__contacts_type_bold">
+                office@bestbuddies.ru</a>
+            </div>
+            <h1 class="title title_position_footer">
+              Лучшие <span class="title__bold">друзья</span> Best
               <span class="title__bold">buddies</span> Russia
             </div>
             <p class="subtitle subtitle_position_footer">
@@ -426,107 +431,108 @@
             </ul>
           </div>
 
-          <button class="help-button help-button_orange">Помочь</button>
+          <button class="help-button help-button_orange help-button_position_footer">Помочь</button>
           <button class="up-button"><a href="#"><img src="<%=require('./images/up-button.png').default%>" alt="вверх" class="" /></a>
           </button>
         </div>
       </footer>
 
-      <div class="popup">
-        <div class="popup__content popup__content_form">
-          <img src="<%=require('./images/popup/close.svg').default%>" alt="Закрыть" class="popup__close">
+      <div class="popup"></div>
 
-          <form class="popup__form" name="donate" novalidate>
-            <h2 class="popup__title">Спасибо, что решили помочь ребятам с нарушением развития!</h2>
-            <div class="popup__payment-wrapper">
-              <span class="popup__payment-type popup__payment-type_active">Банковская карта</span>
-              <span class="popup__payment-type">Яндекс.Деньги</span>
-              <div class="popup__payment-switch">
-                <div class="popup__payment-active"></div>
-              </div>
-            </div>
-            <ul class="popup__sum-wrapper">
-              <li class="popup__sum-button">
-                <input type="radio" class="popup__sum-radio" id='s100' name="sum">
-                <label for="s100" class="popup__sum-label">100 ₽</label>
-              </li>
-              <li class="popup__sum-button">
-                <input type="radio" class="popup__sum-radio" id='s300' name="sum">
-                <label for="s300" class="popup__sum-label">300 ₽</label>
-              </li>
-              <li class="popup__sum-button">
-                <input type="radio" class="popup__sum-radio" id='s500' name="sum" checked>
-                <label for="s500" class="popup__sum-label">500 ₽</label>
-              </li>
-              <li class="popup__sum-button">
-                <input type="radio" class="popup__sum-radio" id='s1000' name="sum">
-                <label for="s1000" class="popup__sum-label">1000 ₽</label>
-              </li>
-              <li class="popup__sum-button popup__sum-button_custom">
-                <input type="number" class="popup__input popup__input_custom_sum" placeholder="Ваша сумма">
-                <img src="<%=require('./images/ruble-icon.png').default%>" alt="" class="popup__input-icon">
-              </li>
-            </ul>
-            <div class="popup__input-wrapper">
-              <label for="username" class="popup__input-tag">Ваше имя *</label>
-              <input type="text" name="username" placeholder="Иван Иванов" class="popup__input popup__input_name" required>
-              <span class="popup__error"></span>
-              <label for="email" class="popup__input-tag">Ваш e-mail *</label>
-              <input name="email" placeholder="ivanivanov@gmail.com" class="popup__input popup__input_email"
-                pattern="[\w\-\.]{2,}@[\w-]{2,}(\.[\w-]{2,})?\.[\w-]{2,}" required>
-              <span class="popup__error"></span>
-            </div>
-            <p class="popup__text">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать,
-              кого
-              благодарить и куда
-              отправить уведомление о получении пожертвования</p>
-            <div class="popup__submit-wrapper">
-              <button class="popup__submit popup__submit_color_purple">Хочу помогать ежемесячно</button>
-              <button class="popup__submit popup__submit_color_white">Помочь один раз</button>
-            </div>
-            <input type="checkbox" class="popup__accept" required>
-            <span class="popup__accept-tag">Я принимаю правила, изложенные в <a href="#"
-                class="popup__accept-link">Соглашении&nbsp;об&nbsp;использовании персональных данных</a></span>
-            <div class="popup__donation-bar"></div>
-            <span class="popup__donation-sum">Собрали 3 374 из 764 536 рублей</span>
-          </form>
-        </div>
-
-
-
-
-      </div>
     </div>
 
-    <template class="popup-template__success">
-      <div class="popup__content popup__content_success popup__content_is-opened">
+    <template class="popup-template__form">
+      <div class="popup__content popup__content_form">
         <img src="<%=require('./images/popup/close.svg').default%>" alt="Закрыть" class="popup__close">
 
         <form class="popup__form" name="donate" novalidate>
-          <h2 class="popup__title">Спасибо, что вы помогаете ребятам с нарушением интеллекта заниматься спортом и
-            развиваться.</h2>
-          <img src="<%=require('./images/video__wrapper.jpg').default%>" alt="Best friends" class="popup__image">
-          <p class="popup__share-text">Расскажите своим друзьям о фонде «Лучшие друзья» и о вашем вкладе:</p>
-          <ul class="social__list social__list_position_form">
-            <li class="social__item social__item_position_donation">
-              <a href="http://twitter.com/" class="social__link">
-                <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
-              </a>
+          <h2 class="popup__title">Спасибо, что решили помочь ребятам с нарушением развития!</h2>
+          <div class="popup__payment-wrapper">
+            <span class="popup__payment-type popup__payment-type_active">Банковская карта</span>
+            <span class="popup__payment-type">Яндекс.Деньги</span>
+            <div class="popup__payment-switch">
+              <div class="popup__payment-active"></div>
+            </div>
+          </div>
+          <ul class="popup__sum-wrapper">
+            <li class="popup__sum-button">
+              <input type="radio" class="popup__sum-radio" id='s100' name="sum">
+              <label for="s100" class="popup__sum-label">100 ₽</label>
             </li>
-            <li class="social__item social__item_position_donation">
-              <a href="http://vk.com/" class="social__link">
-                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />
-              </a>
+            <li class="popup__sum-button">
+              <input type="radio" class="popup__sum-radio" id='s300' name="sum">
+              <label for="s300" class="popup__sum-label">300 ₽</label>
             </li>
-            <li class="social__item social__item_position_donation">
-              <a href="http://facebook.com/" class="social__link">
-                <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
-              </a>
+            <li class="popup__sum-button">
+              <input type="radio" class="popup__sum-radio" id='s500' name="sum" checked>
+              <label for="s500" class="popup__sum-label">500 ₽</label>
+            </li>
+            <li class="popup__sum-button">
+              <input type="radio" class="popup__sum-radio" id='s1000' name="sum">
+              <label for="s1000" class="popup__sum-label">1000 ₽</label>
+            </li>
+            <li class="popup__sum-button popup__sum-button_custom">
+              <input type="number" class="popup__input popup__input_custom_sum" placeholder="Ваша сумма">
+              <img src="<%=require('./images/ruble-icon.png').default%>" alt="" class="popup__input-icon">
             </li>
           </ul>
+          <div class="popup__input-wrapper">
+            <label for="username" class="popup__input-tag">Ваше имя *</label>
+            <input type="text" name="username" placeholder="Иван Иванов" class="popup__input popup__input_name" required>
+            <span class="popup__error"></span>
+            <label for="email" class="popup__input-tag">Ваш e-mail *</label>
+            <input name="email" placeholder="ivanivanov@gmail.com" class="popup__input popup__input_email"
+              pattern="[\w\-\.]{2,}@[\w-]{2,}(\.[\w-]{2,})?\.[\w-]{2,}" required>
+            <span class="popup__error"></span>
+          </div>
+          <p class="popup__text">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать,
+            кого
+            благодарить и куда
+            отправить уведомление о получении пожертвования</p>
+          <div class="popup__submit-wrapper">
+            <button class="popup__submit popup__submit_color_purple">Хочу помогать ежемесячно</button>
+            <button class="popup__submit popup__submit_color_white">Помочь один раз</button>
+          </div>
+
+          <label class="popup__accept-tag">Я принимаю правила, изложенные в <a href="#"
+              class="popup__accept-link">Соглашении&nbsp;об&nbsp;использовании персональных данных</a>
+              <input type="checkbox" class="popup__accept" required>
+              <span class="popup__accept-custom"></span>
+          </label>
         </form>
       </div>
     </template>
+
+    <template class="popup-template__success">
+      <div class="popup__form popup__form_success">
+        <h2 class="popup__title">Спасибо, что вы помогаете ребятам с нарушением интеллекта заниматься спортом и
+          развиваться.</h2>
+        <img src="<%=require('./images/video__wrapper.jpg').default%>" alt="Best friends" class="popup__image">
+        <p class="popup__share-text">Расскажите своим друзьям о фонде «Лучшие друзья» и о вашем вкладе:</p>
+        <ul class="social__list social__list_position_form">
+          <li class="social__item social__item_position_donation">
+            <a href="https://twitter.com/share?url=https://bestbuddies.ru/" class="social__link">
+              <img src="<%=require('./images/social/twitter.png').default%>" alt="twitter" class="social__icon" />
+            </a>
+          </li>
+          <li class="social__item social__item_position_donation">
+            <a href="https://vk.com" class="social__link">
+              <img src="<%=require('./images/social/vk.png').default%>" alt="vk" class="social__icon" />
+            </a>
+
+            <!-- <script type="text/javascript">
+              document.write(VK.Share.button({ url: 'https://bestbuddies.ru/', title: 'Лучшие друзья' }, { type: 'custom', text: '<img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />' }));
+            </script> -->
+          </li>
+          <li class="social__item social__item_position_donation">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
+              <img src="<%=require('./images/social/fb1.png').default%>" alt="facebook" class="social__icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </template>
+
     <script
       type="module"
       src="<%= htmlWebpackPlugin.files.chunks.main.entry%>"

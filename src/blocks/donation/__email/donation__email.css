@@ -9,6 +9,11 @@
   text-align: center;
   letter-spacing: 0.5px;
   cursor: pointer;
+  text-decoration: none;
 
   color: #5a3f98;
+}
+
+.donation__email:hover {
+  text-decoration: underline;
 }

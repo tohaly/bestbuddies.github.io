@@ -1,0 +1,15 @@
+@import url('./__donation-bar/form__donation-bar.css');
+@import url('./__donation-sum/form__donation-sum.css');
+@import url('./__donation-bar-progress/form__donation-bar-progress.css');
+
+.form {
+  max-width: 704px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .form {
+    margin-bottom: 32px;
+  }
+}

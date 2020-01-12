@@ -10,3 +10,7 @@
   margin: 0;
   grid-area: title;
 }
+
+.title_position_footer {
+  margin: 0 0 4px;
+}

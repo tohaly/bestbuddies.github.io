@@ -1,0 +1,8 @@
+.form__donation-bar-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15%;
+  background: #fc691b;
+}

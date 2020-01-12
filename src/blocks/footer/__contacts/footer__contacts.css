@@ -14,9 +14,9 @@
 .footer__contacts_type_bold {
   font-weight: bold;
   display: block;
-  margin-top: 8px;
+  text-decoration: none;
 }
 
-.footer__contacts_type_bold:last-of-type {
-  margin-top: 0;
+.footer__contacts_type_bold:hover {
+  text-decoration: underline;
 }

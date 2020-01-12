@@ -7,6 +7,7 @@
 @media screen and (max-width: 1024px) {
   .subtitle_position_footer {
     display: block;
+    margin-bottom: 20px;
   }
 }
 

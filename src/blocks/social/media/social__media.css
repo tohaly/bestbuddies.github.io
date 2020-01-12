@@ -2,16 +2,10 @@
   .social__item_position_footer {
     margin-right: 32px;
   }
-  .social__list_position_header{
+  .social__list_position_header {
     margin-right: 16px;
   }
-  .social__item_position_header{
+  .social__item_position_header {
     margin-right: 16px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .social__list_position_donation {
-    margin-bottom: 100px;
   }
 }
