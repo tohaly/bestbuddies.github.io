@@ -31,9 +31,12 @@ document.querySelector('.up-button').addEventListener('click', event => {
 
 document.querySelectorAll('.social__item_copy').forEach(button => {
   button.addEventListener('click', e => {
-    const copyText = document.querySelector('.social__copy');
-    copyText.select();
+    const dummy = document.createElement('input');
+    document.body.appendChild(dummy);
+    dummy.value = 'https://bestbuddies.ru/';
+    dummy.select();
     document.execCommand('copy');
+    document.body.removeChild(dummy);
   });
 });
 
