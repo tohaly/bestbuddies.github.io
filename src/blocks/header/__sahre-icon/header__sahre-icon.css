@@ -6,10 +6,10 @@
   background-position: center;
   width: 24px;
   height: 28px;
-  margin: 0 56px 0 0;
+  margin: 16px 56px 0 0;
   cursor: pointer;
 }
 
 .header__sahre-icon:hover{
-  background-image: url('../../../images/share__icon_hover.svg');
+  filter: invert(46%) sepia(84%) saturate(1933%) hue-rotate(349deg) brightness(100%) contrast(98%);
 }

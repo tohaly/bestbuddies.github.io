@@ -7,6 +7,16 @@
   margin-right: 0;
 }
 
+.social__item:hover {
+  filter: invert(45%) sepia(84%) saturate(1878%) hue-rotate(349deg)
+    brightness(101%) contrast(98%);
+}
+
+.social__item:active {
+  filter: invert(45%) sepia(84%) saturate(1878%) hue-rotate(349deg)
+    brightness(101%) contrast(98%);
+}
+
 .social__item_position_footer {
   display: inline-block;
   margin-right: 24px;
@@ -23,12 +33,3 @@
     brightness(93%) contrast(88%);
 }
 
-.social__item_position_donation:hover {
-  filter: invert(45%) sepia(84%) saturate(1878%) hue-rotate(349deg)
-    brightness(101%) contrast(98%);
-}
-
-.social__item_position_donation:active {
-  filter: invert(45%) sepia(84%) saturate(1878%) hue-rotate(349deg)
-    brightness(101%) contrast(98%);
-}

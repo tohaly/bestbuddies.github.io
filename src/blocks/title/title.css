@@ -7,11 +7,6 @@
   text-transform: uppercase;
   letter-spacing: 0.8px;
   font-style: normal;
-  max-width: 220px;
   margin: 0;
   grid-area: title;
-}
-
-.title_position_footer {
-  max-width: 215px;
 }
