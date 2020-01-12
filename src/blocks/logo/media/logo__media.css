@@ -2,4 +2,9 @@
   .logo_position_footer {
     margin-bottom: 36px;
   }
+  .logo_position_heeaedr {
+    margin: 0;
+    width: 64px;
+    height: 64px;
+  }
 }
