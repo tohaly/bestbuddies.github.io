@@ -3,12 +3,6 @@
     padding-right: 32px;
     padding-left: 32px;
   }
-  .header__title{
-    margin-left: 40px;
-  }
-  .header__social-logo{
-    margin-right: 48px;
-  }
 }
 
 @media screen and (max-width: 767px){
