@@ -9,5 +9,5 @@
 }
 
 .lead__button:hover .lead__play-icon{
-  background-image: url('../../../images/play__icon_hover.svg');
+  filter: brightness(0) saturate(100%) invert(26%) sepia(25%) saturate(3089%) hue-rotate(231deg) brightness(90%) contrast(88%);
 }

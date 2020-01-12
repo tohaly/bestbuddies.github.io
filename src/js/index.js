@@ -14,7 +14,7 @@ window.popup = popup;
 headerFunctional.listeners();
 
 document.querySelectorAll('.help-button').forEach(button => {
-  button.addEventListener('click', popup.open);
+  button.addEventListener('click', popup.open)
 });
 
 document.querySelector('.up-button').addEventListener('click', event => {
