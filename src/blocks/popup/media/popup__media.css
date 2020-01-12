@@ -7,7 +7,7 @@
       '. custom custom';
     grid-column-gap: 20px;
   }
-  .popup__input_custom_sum {
+  .popup__sum-button_custom {
     grid-area: custom;
   }
   .popup__input-wrapper {
@@ -37,5 +37,8 @@
   }
   .popup__donation-bar {
     margin: 60px 0 16px;
+  }
+  .popup__form_position_page {
+    margin-bottom: 60px;
   }
 }

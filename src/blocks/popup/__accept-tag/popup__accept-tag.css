@@ -7,5 +7,7 @@
 
   color: #333235;
 
-  margin-bottom: 76px;
+  padding-left: 20px;
+  position: relative;
+  display: block;
 }

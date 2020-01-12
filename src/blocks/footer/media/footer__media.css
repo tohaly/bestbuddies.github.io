@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
-  .footer__contacts {
-    margin-top: 20px;
+  .footer__contacts_type_bold:last-of-type {
+    margin-bottom: 20px;
   }
   .footer__container {
     padding: 48px 32px 52px 40px;
@@ -27,7 +27,7 @@
     justify-content: flex-start;
   }
   .footer__info-wrapper {
-    margin: 36px 0 48px;
+    margin: 0 0 48px;
     justify-items: center;
   }
 }

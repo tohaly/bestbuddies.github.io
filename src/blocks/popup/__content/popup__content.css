@@ -1,5 +1,5 @@
 .popup__content {
-  display: none;
+  display: block;
   background-color: #ffffff;
   border-radius: 12px;
   max-width: 840px;
@@ -7,8 +7,4 @@
   position: relative;
   padding: 60px 16px;
   box-sizing: border-box;
-}
-
-.popup__content_is-opened {
-  display: block;
 }

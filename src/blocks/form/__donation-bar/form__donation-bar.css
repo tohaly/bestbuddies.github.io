@@ -1,8 +1,8 @@
-.popup__donation-bar {
-  /* background: rgba(255, 255, 255, 0.5); */
+.form__donation-bar {
   height: 12px;
   border: 2px solid #fc691b;
   border-radius: 6px;
   background-color: transparent;
-  margin: 76px 0 16px;
+  margin: 0 0 16px;
+  position: relative;
 }

@@ -1,3 +1,5 @@
+@import url('./media/help-button__media.css');
+
 .help-button {
   width: 160px;
   height: 40px;
@@ -18,6 +20,6 @@
   background-color: #fc691b;
 }
 
-.help-button:active{
+.help-button:active {
   color: #000;
 }

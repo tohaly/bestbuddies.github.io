@@ -33,12 +33,11 @@ export default class Validation {
   }
 
   validateHandler(event) {
-    const popupForm = event.target.closest('.popup__form');
-    const submitWhite = popupForm.querySelector('.popup__submit_color_white');
-    const submitPurple = popupForm.querySelector('.popup__submit_color_purple');
-    const popupDonate = document.querySelector('.popup__content_form');
-    const nameInput = popupDonate.querySelector('.popup__input_name');
-    const emailInput = popupDonate.querySelector('.popup__input_email');
+    const form = event.target.closest('.popup__form');
+    const submitWhite = form.querySelector('.popup__submit_color_white');
+    const submitPurple = form.querySelector('.popup__submit_color_purple');
+    const nameInput = form.querySelector('.popup__input_name');
+    const emailInput = form.querySelector('.popup__input_email');
 
     event.preventDefault();
 
@@ -51,7 +50,7 @@ export default class Validation {
       this.inputHandler(emailInput);
     }
 
-    if (this.checkFormValid(popupForm)) {
+    if (this.checkFormValid(form)) {
       submitWhite.classList.add('popup__submit_color_white_active');
       submitPurple.classList.add('popup__submit_color_purple_active');
     } else {

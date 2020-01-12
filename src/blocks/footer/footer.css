@@ -1,6 +1,7 @@
 @import url('./__contacts/footer__contacts.css');
 @import url('./__container/footer__container.css');
 @import url('./__info-wrapper/footer__info-wrapper.css');
+@import url('./__address/footer__address.css');
 
 .footer {
   font-family: HelveticaNeueCyr;
