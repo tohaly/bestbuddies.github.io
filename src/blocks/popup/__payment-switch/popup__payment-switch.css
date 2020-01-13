@@ -1,6 +1,6 @@
 .popup__payment-switch {
   background-image: url(~images/popup/switch.png);
-  width: 344px;
+  max-width: 344px;
   height: 4px;
   margin-top: 4px;
 }

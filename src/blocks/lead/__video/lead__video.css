@@ -2,6 +2,6 @@
   background-image: url('../../../images/video__wrapper.jpg');
   width: 100%;
   padding-top: 56%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
