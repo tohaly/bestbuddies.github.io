@@ -7,7 +7,6 @@
     <meta name="desciption" content="«Лучшие друзья» помогают людям с нарушениями развития познакомиться и подружиться со сверстниками без инвалидности, найти работу и жить самостоятельно.">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-    <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
     <link rel="shortcut icon" href="<%=require('./images/favicon.ico').default%>" type="image/x-icon">
     <title>Лучшие друзья Россия | Фонд поддержки лиц с интеллектуальными нарушениями</title>
     <meta property="og:locale" content="ru_RU">
@@ -41,9 +40,7 @@
               </a>
             </li>
             <li class="social__item social__item_position_header">
-              <script type="text/javascript">
-                document.write(VK.Share.button({ url: 'https://bestbuddies.ru/', title: 'Лучшие друзья' }, { type: 'custom', text: '<img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />' }));
-              </script>
+              <button class="social__icon_vk" data-sharer="vk" data-title="vk" data-url="https://bestbuddies.ru/"></button>
             </li>
             <li class="social__item social__item_position_header">
               <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
@@ -369,9 +366,8 @@
               </a>
             </li>
             <li class="social__item social__item_position_donation">
-              <script type="text/javascript">
-                document.write(VK.Share.button({ url: 'https://bestbuddies.ru/', title: 'Лучшие друзья' }, { type: 'custom', text: '<img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />' }));
-              </script>
+              <button class="social__icon_vk" data-sharer="vk"
+                data-title="vk" data-url="https://bestbuddies.ru/"></button>
             </li>
             <li class="social__item social__item_position_donation">
               <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
@@ -516,13 +512,7 @@
             </a>
           </li>
           <li class="social__item social__item_position_donation">
-            <a href="https://vk.com" class="social__link">
-              <img src="<%=require('./images/social/vk.png').default%>" alt="vk" class="social__icon" />
-            </a>
-
-            <!-- <script type="text/javascript">
-              document.write(VK.Share.button({ url: 'https://bestbuddies.ru/', title: 'Лучшие друзья' }, { type: 'custom', text: '<img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" />' }));
-            </script> -->
+            <button class="social__icon_vk" data-sharer="vk" data-title="vk" data-url="https://bestbuddies.ru/"></button>
           </li>
           <li class="social__item social__item_position_donation">
             <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
