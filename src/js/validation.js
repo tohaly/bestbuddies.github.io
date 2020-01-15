@@ -19,12 +19,21 @@ export default class Validation {
   toggleFieldByValid(field, state) {
     if (state) {
       field.classList.add('popup__input_invalid');
-      field.previousElementSibling.style.color = 'red';
+      field.previousElementSibling.style.color = '#ED180B';
     } else {
       field.nextElementSibling.textContent = '';
       field.classList.remove('popup__input_invalid');
       field.previousElementSibling.style.color = '#5a3f98';
     }
+  }
+
+  checkSumValid(form) {
+    if (
+      form.elements.customSum.value ||
+      form.querySelector('input[name=sum]:checked')
+    )
+      return true;
+    return false;
   }
 
   checkFormValid(form) {
@@ -50,7 +59,7 @@ export default class Validation {
       this.inputHandler(emailInput);
     }
 
-    if (this.checkFormValid(form)) {
+    if (this.checkFormValid(form) && this.checkSumValid(form)) {
       submitWhite.classList.add('popup__submit_color_white_active');
       submitPurple.classList.add('popup__submit_color_purple_active');
     } else {
