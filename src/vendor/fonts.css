@@ -30,3 +30,8 @@
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: ALSRubl;
+  src: url('./fonts/rouble.ttf');
+}

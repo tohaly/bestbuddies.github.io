@@ -30,6 +30,14 @@ export default class Popup {
       !e.target.nextElementSibling.classList.contains('popup__form_success')
     ) {
       this.popupForm.removeListeners();
+    } else if (
+      e.target.nextElementSibling.classList.contains('popup__form_success')
+    ) {
+      this.container
+        .querySelector('.social__icon_vk')
+        .removeEventListener('click', () => {
+          window.Sharer.init();
+        });
     }
     this.removeListeners(e);
     this.container.firstElementChild.remove();
@@ -41,6 +49,11 @@ export default class Popup {
       .querySelector('.popup-template__success')
       .content.cloneNode(true)
       .querySelector('.popup__form');
+    successPopup
+      .querySelector('.social__icon_vk')
+      .addEventListener('click', () => {
+        window.Sharer.init();
+      });
     this.container.querySelector('.popup__form').remove();
     this.container.querySelector('.popup__content').appendChild(successPopup);
   }

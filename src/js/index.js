@@ -3,6 +3,7 @@ import './slider';
 import Header from './header';
 import Popup from './popup';
 import Form from './form';
+import '../../node_modules/sharer.js/sharer.min';
 
 const popupContainer = document.querySelector('.popup');
 
@@ -14,7 +15,7 @@ window.popup = popup;
 headerFunctional.listeners();
 
 document.querySelectorAll('.help-button').forEach(button => {
-  button.addEventListener('click', popup.open)
+  button.addEventListener('click', popup.open);
 });
 
 document.querySelector('.up-button').addEventListener('click', event => {

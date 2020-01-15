@@ -1,0 +1,10 @@
+.social__icon_vk {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-image: url(~images/social/vk1.png);
+  width: 30px;
+  height: 30px;
+}
