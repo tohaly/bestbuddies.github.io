@@ -14,13 +14,19 @@
     display: flex;
     flex-direction: column;
   }
+  .popup__content {
+    height: 100%;
+    border-radius: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .popup__title {
     margin-bottom: 32px;
   }
-  .popup__payment-wrapper {
+  .popup__payment-switch {
     margin-bottom: 32px;
   }
   .popup__sum-wrapper {

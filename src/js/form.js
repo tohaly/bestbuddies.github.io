@@ -15,13 +15,12 @@ export default class Form {
     this.form = document
       .querySelector('.popup-template__form')
       .content.cloneNode(true)
-      .querySelector('.popup__content_form');
+      .querySelector('.popup__form');
     this.checkedRadio = this.form.querySelector('input[name=sum]:checked');
   }
 
   insertToPage() {
     this.render();
-    this.form = this.form.querySelector('.popup__form');
     this.form.firstElementChild.remove();
     this.form.classList.add('popup__form_position_page');
     document
