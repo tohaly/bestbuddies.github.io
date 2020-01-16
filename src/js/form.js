@@ -1,9 +1,12 @@
 import Validation from './validation';
+import pay from './payment';
 
 export default class Form {
   constructor() {
+    this.pay = pay;
     this.validation = new Validation();
-    this.form = '';
+    this.form = null;
+    this.checkedRadio = null;
     this.uncheckRadio = this.uncheckRadio.bind(this);
     this.submit = this.submit.bind(this);
   }
@@ -13,6 +16,7 @@ export default class Form {
       .querySelector('.popup-template__form')
       .content.cloneNode(true)
       .querySelector('.popup__content_form');
+    this.checkedRadio = this.form.querySelector('input[name=sum]:checked');
   }
 
   insertToPage() {
@@ -33,42 +37,62 @@ export default class Form {
 
   addListeners() {
     this.form.addEventListener('input', this.validation.validateHandler);
-    this.form.querySelectorAll('.popup__submit').forEach(button => {
-      button.addEventListener('click', this.submit);
-    });
+    this.form
+      .querySelector('.popup__submit-wrapper')
+      .addEventListener('click', this.submit);
     this.form
       .querySelector('.popup__sum-button_custom')
-      .addEventListener('click', this.uncheckRadio);
+      .addEventListener('input', this.uncheckRadio);
   }
 
   removeListeners() {
     this.form.removeEventListener('input', this.validation.validateHandler);
-    this.form.querySelectorAll('.popup__submit').forEach(button => {
-      button.removeEventListener('click', this.submit);
-    });
+    this.form
+      .querySelector('.popup__submit-wrapper')
+      .removeEventListener('click', this.submit);
     this.form
       .querySelector('.popup__sum-button_custom')
-      .removeEventListener('click', this.uncheckRadio);
+      .removeEventListener('input', this.uncheckRadio);
   }
 
   submit(e) {
     e.preventDefault();
 
-    if (e.target.closest('.popup__form').checkValidity()) {
-      if (e.target.closest('.popup')) {
-        this.removeListeners();
-        window.popup.renderSuccessPopup();
+    if (
+      e.target.classList.contains('popup__submit') &&
+      e.target.closest('.popup__form').checkValidity()
+    ) {
+      const amount = Number(this.getSum(e));
+      const email = e.target.form.elements.email.value;
+      if (e.target.classList.contains('popup__submit_color_purple')) {
+        const data = {};
+        data.cloudPayments = {
+          recurrent: { interval: 'Month', period: 1 },
+        };
+        this.pay(amount, email, e, data);
       } else {
-        console.log('open payment');
+        this.pay(amount, email, e);
       }
     } else {
       this.validation.validateHandler(e);
     }
   }
 
-  uncheckRadio() {
-    this.form.querySelectorAll('.popup__sum-radio').forEach(radio => {
-      radio.checked = false;
-    });
+  uncheckRadio(e) {
+    if (this.form.querySelector('input[name=sum]:checked')) {
+      this.form.querySelector('input[name=sum]:checked').checked = false;
+    }
+    if (e.target.value === '') {
+      this.checkedRadio.checked = true;
+    }
+  }
+
+  getSum(e) {
+    if (e.target.form.elements.customSum.value) {
+      return e.target.form.elements.customSum.value;
+    }
+    if (this.form.querySelector('input[name=sum]:checked')) {
+      return this.form.querySelector('input[name=sum]:checked').value;
+    }
   }
 }

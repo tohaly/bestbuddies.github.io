@@ -23,6 +23,10 @@
   padding-right: 27px;
 }
 
+.popup__input_custom_sum:invalid {
+  border: 2px solid #ed180b;
+}
+
 .popup__input_custom_sum::placeholder {
   font-weight: normal;
 }
@@ -38,6 +42,11 @@
     brightness(101%) contrast(98%);
 }
 
+.popup__input_custom_sum:invalid + .popup__input-icon {
+  filter: invert(16%) sepia(83%) saturate(3856%) hue-rotate(354deg)
+    brightness(100%) contrast(105%);
+}
+
 .popup__input_invalid {
-  border: 2px solid red;
+  border: 2px solid #ed180b;
 }

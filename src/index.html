@@ -16,6 +16,8 @@
     <meta property="og:url" content="https://bestbuddies.ru/">
     <meta property="og:site_name" content="Лучшие друзья">
     <meta property="og:image" content="https://bestbuddies.ru/wp-content/uploads/2015/03/Facebook-sharing.png">
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+
   </head>
   <body>
     <div class="page">
@@ -40,7 +42,8 @@
               </a>
             </li>
             <li class="social__item social__item_position_header">
-              <button class="social__icon_vk" data-sharer="vk" data-title="vk" data-url="https://bestbuddies.ru/"></button>
+              <button class="social__icon_vk" data-sharer="vk" data-title="vk" data-url="https://bestbuddies.ru/">
+              <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" /></button>
             </li>
             <li class="social__item social__item_position_header">
               <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
@@ -366,7 +369,8 @@
             </li>
             <li class="social__item social__item_position_donation">
               <button class="social__icon_vk" data-sharer="vk"
-                data-title="vk" data-url="https://bestbuddies.ru/"></button>
+                data-title="vk" data-url="https://bestbuddies.ru/">
+                <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" /></button>
             </li>
             <li class="social__item social__item_position_donation">
               <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">
@@ -451,23 +455,24 @@
           </div>
           <ul class="popup__sum-wrapper">
             <li class="popup__sum-button">
-              <input type="radio" class="popup__sum-radio" id='s100' name="sum">
-              <label for="s100" class="popup__sum-label">100 <span class="rouble">o</span></label>
+              <input type="radio" class="popup__sum-radio" name="sum" value="100">
+              <label for="sum" class="popup__sum-label">100 <span class="rouble">o</span></label>
             </li>
             <li class="popup__sum-button">
-              <input type="radio" class="popup__sum-radio" id='s300' name="sum">
-              <label for="s300" class="popup__sum-label">300 <span class="rouble">o</span></label>
+              <input type="radio" class="popup__sum-radio" name="sum" value="300">
+              <label for="sum" class="popup__sum-label">300 <span class="rouble">o</span></label>
             </li>
             <li class="popup__sum-button">
-              <input type="radio" class="popup__sum-radio" id='s500' name="sum" checked>
-              <label for="s500" class="popup__sum-label">500 <span class="rouble">o</span></label>
+              <input type="radio" class="popup__sum-radio" name="sum" checked value="500">
+              <label for="sum" class="popup__sum-label">500 <span class="rouble">o</span></label>
             </li>
             <li class="popup__sum-button">
-              <input type="radio" class="popup__sum-radio" id='s1000' name="sum">
-              <label for="s1000" class="popup__sum-label">1000 <span class="rouble">o</span></label>
+              <input type="radio" class="popup__sum-radio" name="sum" value="1000">
+              <label for="sum" class="popup__sum-label">1000 <span class="rouble">o</span></label>
             </li>
             <li class="popup__sum-button popup__sum-button_custom">
-              <input type="number" class="popup__input popup__input_custom_sum" placeholder="Ваша сумма">
+              <input class="popup__input popup__input_custom_sum" placeholder="Ваша сумма" name='customSum'
+                pattern="[1-9]+[0-9]*">
               <img src="<%=require('./images/ruble-icon.png').default%>" alt="" class="popup__input-icon">
             </li>
           </ul>
@@ -511,7 +516,8 @@
             </a>
           </li>
           <li class="social__item social__item_position_donation">
-            <button class="social__icon_vk" data-sharer="vk" data-title="vk" data-url="https://bestbuddies.ru/"></button>
+            <button class="social__icon_vk" data-sharer="vk" data-title="vk" data-url="https://bestbuddies.ru/">
+            <img src="<%=require('./images/social/vk1.png').default%>" alt="vk" class="social__icon" /></button>
           </li>
           <li class="social__item social__item_position_donation">
             <a href="https://www.facebook.com/sharer/sharer.php?u=bestbuddies.ru" target="_blank" class="social__link">

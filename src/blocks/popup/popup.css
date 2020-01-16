@@ -21,6 +21,7 @@
 @import url('./__image/popup__image.css');
 @import url('./__sum-radio/popup__sum-radio.css');
 @import url('./__sum-label/popup__sum-label.css');
+@import url('./__share-text/popup__share-text.css');
 
 .popup {
   font-family: HelveticaNeueCyr;
