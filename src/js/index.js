@@ -11,9 +11,10 @@ const popupContainer = document.querySelector('.popup');
 
 const api = new Api({
   baseUrl:
-    'https://v2-api.sheety.co/2913ff0e1453a0ecead83d09ae6c935b/bestFriends/donation',
+    'https://v2-api.sheety.co/2913ff0e1453a0ecead83d09ae6c935b/bestFriends/donations',
   headers: {
     Authorization: 'Bearer praktikum2020',
+    'Content-Type': 'application/json',
   },
 });
 
@@ -24,17 +25,6 @@ const successPopup = new SuccessPopup(popupContainer);
 
 window.formPopup = formPopup;
 window.sucessPopup = successPopup;
-
-export default function onSuccess(e, amount, email) {
-  if (e.target.closest('.popup')) {
-    formPopup.close();
-  }
-  successPopup.open();
-  // api
-  //   .addDonation(amount, email)
-  //   .then(res => console.log(res))
-  //   .catch(res => console.log(res));
-}
 
 headerFunctional.listeners();
 
@@ -65,25 +55,43 @@ document.querySelectorAll('.social__item_copy').forEach(button => {
   });
 });
 
-form.insertToPage();
+function apiGetSum() {
+  api
+    .getSumInfo()
+    .then(res => {
+      const currentSum = res.donations.reduce((acc, item) => {
+        return acc + item.amount;
+      }, 0);
+      const progressBar = document.querySelector(
+        '.form__donation-bar-progress',
+      );
+      const currentSumDOM = document.querySelector(
+        '.form__donation-sum-current',
+      );
+      const maxSumDOM = document.querySelector('.form__donation-sum-max');
+      const maxSum = 764536;
+      if (currentSum <= maxSum) {
+        progressBar.style.width = `${(currentSum * 100) / maxSum}%`;
+        currentSumDOM.textContent = currentSum.toLocaleString();
+      } else {
+        progressBar.style.width = `100%`;
+        currentSumDOM.textContent = maxSum.toLocaleString();
+      }
+      maxSumDOM.textContent = maxSum.toLocaleString();
+    })
+    .catch(res => alert(res));
+}
 
-api
-  .getSumInfo()
-  .then(res => {
-    const currentSum = res.donation.reduce((acc, item) => {
-      return acc + item.amount;
-    }, 0);
-    const maxSum = Number(
-      document.querySelector('.form__donation-sum-max').textContent,
-    );
-    document.querySelector(
-      '.form__donation-sum-current',
-    ).textContent = currentSum.toLocaleString();
-    document.querySelector(
-      '.form__donation-bar-progress',
-    ).style.width = `${(currentSum * 100) / maxSum}%`;
-    document.querySelector(
-      '.form__donation-sum-max',
-    ).textContent = maxSum.toLocaleString();
-  })
-  .catch(() => alert('Ошибка!'));
+export default function onSuccess(e, amount, email) {
+  if (e.target.closest('.popup')) {
+    formPopup.close();
+  }
+  successPopup.open();
+  api
+    .addDonation(amount, email)
+    .then(() => apiGetSum())
+    .catch(err => console.log(err));
+}
+
+form.insertToPage();
+apiGetSum();
