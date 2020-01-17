@@ -22,10 +22,14 @@ export default class Api {
     return fetch(`${this.baseUrl}`, {
       method: 'POST',
       body: JSON.stringify({
-        email,
-        amount,
+        donation: {
+          email,
+          amount,
+        },
       }),
       headers: this.headers,
-    }).then(res => this.getJSONResponse(res));
+    }).then(res => {
+      this.getJSONResponse(res);
+    });
   }
 }
