@@ -1,3 +1,5 @@
+import onSuccess from './index';
+
 export default function pay(amount, email, e, data) {
   const widget = new cp.CloudPayments();
   widget.charge(
@@ -16,7 +18,7 @@ export default function pay(amount, email, e, data) {
       data,
     },
     function() {
-      window.popup.onSuccess(e);
+      onSuccess(e, amount, email);
     },
     function() {
       alert('Ошибка оплаты, попробуйте еще раз');

@@ -1,21 +1,45 @@
 import '../pages/index.css';
-import './slider';
 import Header from './header';
-import Popup from './popup';
+import FormPopup from './formpopup';
+import SuccessPopup from './successpopup';
 import Form from './form';
+import Api from './api';
 import '../../node_modules/sharer.js/sharer.min';
+import './slider';
 
 const popupContainer = document.querySelector('.popup');
 
+const api = new Api({
+  baseUrl:
+    'https://v2-api.sheety.co/2913ff0e1453a0ecead83d09ae6c935b/bestFriends/donation',
+  headers: {
+    Authorization: 'Bearer praktikum2020',
+  },
+});
+
 const headerFunctional = new Header(document.querySelector('.header'));
-const popup = new Popup(popupContainer);
 const form = new Form();
-window.popup = popup;
+const formPopup = new FormPopup(popupContainer);
+const successPopup = new SuccessPopup(popupContainer);
+
+window.formPopup = formPopup;
+window.sucessPopup = successPopup;
+
+export default function onSuccess(e, amount, email) {
+  if (e.target.closest('.popup')) {
+    formPopup.close();
+  }
+  successPopup.open();
+  // api
+  //   .addDonation(amount, email)
+  //   .then(res => console.log(res))
+  //   .catch(res => console.log(res));
+}
 
 headerFunctional.listeners();
 
 document.querySelectorAll('.help-button').forEach(button => {
-  button.addEventListener('click', popup.open);
+  button.addEventListener('click', formPopup.open);
 });
 
 document.querySelector('.up-button').addEventListener('click', event => {
@@ -42,3 +66,24 @@ document.querySelectorAll('.social__item_copy').forEach(button => {
 });
 
 form.insertToPage();
+
+api
+  .getSumInfo()
+  .then(res => {
+    const currentSum = res.donation.reduce((acc, item) => {
+      return acc + item.amount;
+    }, 0);
+    const maxSum = Number(
+      document.querySelector('.form__donation-sum-max').textContent,
+    );
+    document.querySelector(
+      '.form__donation-sum-current',
+    ).textContent = currentSum.toLocaleString();
+    document.querySelector(
+      '.form__donation-bar-progress',
+    ).style.width = `${(currentSum * 100) / maxSum}%`;
+    document.querySelector(
+      '.form__donation-sum-max',
+    ).textContent = maxSum.toLocaleString();
+  })
+  .catch(() => alert('Ошибка!'));

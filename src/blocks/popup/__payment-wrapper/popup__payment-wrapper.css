@@ -1,3 +1,5 @@
 .popup__payment-wrapper {
-  margin-bottom: 40px;
+  max-width: 344px;
+  display: flex;
+  justify-content: space-between;
 }

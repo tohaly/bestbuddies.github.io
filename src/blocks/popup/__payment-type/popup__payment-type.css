@@ -7,10 +7,6 @@
   cursor: pointer;
 }
 
-.popup__payment-type:first-of-type {
-  margin-right: 40px;
-}
-
 .popup__payment-type_active {
   color: #5a3f98;
 }
