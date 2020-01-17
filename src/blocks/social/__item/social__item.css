@@ -3,6 +3,7 @@
   width: 30px;
   height: 30px;
   margin-right: 32px;
+  cursor: pointer;
 }
 
 .social__item:last-of-type {
