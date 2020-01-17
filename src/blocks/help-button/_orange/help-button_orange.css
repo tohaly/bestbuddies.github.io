@@ -1,6 +1,7 @@
 .help-button_orange {
   color: #fff;
   background-color: #fc691b;
+  border: none;
 }
 
 .help-button_orange:hover {

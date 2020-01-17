@@ -13,6 +13,7 @@
   box-sizing: border-box;
   text-transform: uppercase;
   cursor: pointer;
+  transition: background-color .4s;
 }
 
 .help-button:hover {
