@@ -14,7 +14,7 @@ export default class FormPopup extends Popup {
   }
 
   close() {
-    this.popupForm.removeListeners();
+    this.popupForm.toggleEventListeners(false);
     this.closeRender();
   }
 }
