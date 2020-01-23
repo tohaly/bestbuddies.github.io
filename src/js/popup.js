@@ -6,26 +6,23 @@ export default class Popup {
     this.open = this.open.bind(this);
   }
 
-  addListeners() {
-    this.container
-      .querySelector('.popup__close')
-      .addEventListener('click', this.close);
-  }
-
-  removeListeners() {
-    this.container
-      .querySelector('.popup__close')
-      .removeEventListener('click', this.close);
+  toggleEventListeners(isAdd) {
+    const closeButton = this.container.querySelector('.popup__close');
+    if (isAdd) {
+      closeButton.addEventListener('click', this.close);
+    } else {
+      closeButton.removeEventListener('click', this.close);
+    }
   }
 
   openRender() {
     this.container.classList.add('popup_is-opened');
-    this.addListeners();
+    this.toggleEventListeners(true);
   }
 
   closeRender() {
     this.container.querySelector('.popup__form').remove();
-    this.removeListeners();
+    this.toggleEventListeners(false);
     this.container.classList.remove('popup_is-opened');
   }
 
