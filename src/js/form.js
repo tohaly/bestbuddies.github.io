@@ -59,9 +59,13 @@ export default class Form {
       const amount = Number(this.getSum(e));
       const email = e.target.form.elements.email.value;
       if (e.target.classList.contains('popup__submit_color_purple')) {
-        const data = {};
-        data.cloudPayments = {
-          recurrent: { interval: 'Month', period: 1 },
+        const data = {
+          cloudPayments: {
+            recurrent: {
+              interval: 'Month',
+              period: 1,
+            },
+          },
         };
         this.pay(amount, email, e, data);
       } else {
