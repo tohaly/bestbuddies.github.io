@@ -6,6 +6,7 @@ import Form from './form';
 import Api from './api';
 import '../../node_modules/sharer.js/sharer.min';
 import './slider';
+import config from './config';
 
 const popupContainer = document.querySelector('.popup');
 
@@ -13,7 +14,7 @@ const api = new Api({
   baseUrl:
     'https://v2-api.sheety.co/2913ff0e1453a0ecead83d09ae6c935b/bestFriends/donations',
   headers: {
-    Authorization: 'Bearer praktikum2020',
+    Authorization: config.sheety.authorization,
     'Content-Type': 'application/json',
   },
 });
@@ -69,7 +70,7 @@ function apiGetSum() {
         '.form__donation-sum-current',
       );
       const maxSumDOM = document.querySelector('.form__donation-sum-max');
-      const maxSum = 764536;
+      const { maxSum } = config.payment;
       if (currentSum <= maxSum) {
         progressBar.style.width = `${(currentSum * 100) / maxSum}%`;
         currentSumDOM.textContent = currentSum.toLocaleString();
