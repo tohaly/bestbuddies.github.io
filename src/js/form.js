@@ -26,32 +26,27 @@ export default class Form {
     document
       .querySelector('.form')
       .insertBefore(this.form, document.querySelector('.form__donation-bar'));
-    this.addListeners();
+    this.toggleEventListeners(true);
   }
 
   insertToPopup() {
     this.render();
-    this.addListeners();
+    this.toggleEventListeners(true);
   }
 
-  addListeners() {
-    this.form.addEventListener('input', this.validation.validateHandler);
-    this.form
-      .querySelector('.popup__submit-wrapper')
-      .addEventListener('click', this.submit);
-    this.form
-      .querySelector('.popup__sum-button_custom')
-      .addEventListener('input', this.uncheckRadio);
-  }
+  toggleEventListeners(isAdd) {
+    const submitWrapper = this.form.querySelector('.popup__submit-wrapper');
+    const sumButCustom = this.form.querySelector('.popup__sum-button_custom');
 
-  removeListeners() {
-    this.form.removeEventListener('input', this.validation.validateHandler);
-    this.form
-      .querySelector('.popup__submit-wrapper')
-      .removeEventListener('click', this.submit);
-    this.form
-      .querySelector('.popup__sum-button_custom')
-      .removeEventListener('input', this.uncheckRadio);
+    if (isAdd) {
+      this.form.addEventListener('input', this.validation.validateHandler);
+      submitWrapper.addEventListener('click', this.submit);
+      sumButCustom.addEventListener('input', this.uncheckRadio);
+    } else {
+      this.form.removeEventListener('input', this.validation.validateHandler);
+      submitWrapper.removeEventListener('click', this.submit);
+      sumButCustom.removeEventListener('input', this.uncheckRadio);
+    }
   }
 
   submit(e) {
@@ -87,8 +82,9 @@ export default class Form {
   }
 
   getSum(e) {
-    if (e.target.form.elements.customSum.value) {
-      return e.target.form.elements.customSum.value;
+    const customSunValue = e.target.form.elements.customSum.value;
+    if (customSunValue) {
+      return customSunValue;
     }
     if (this.form.querySelector('input[name=sum]:checked')) {
       return this.form.querySelector('input[name=sum]:checked').value;
