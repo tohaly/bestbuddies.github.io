@@ -1,12 +1,11 @@
-import onSuccess from './index';
-import config from './config';
+import { PUBLIC_ID, onSuccess } from './index';
 
 export default function pay(amount, email, e, data) {
   const widget = new cp.CloudPayments();
   widget.charge(
     {
       // options
-      publicId: config.payment.publicId, // id из личного кабинета
+      publicId: PUBLIC_ID, // id из личного кабинета
       description: 'Пример оплаты (деньги сниматься не будут)', // назначение
       amount, // сумма
       currency: 'RUB', // валюта
