@@ -5,6 +5,7 @@ const slider = tns({
   autoplay: false,
   controls: false,
   navContainer: '.slider-remote__navigation',
+  swipeAngle: '45',
 });
 
 document
