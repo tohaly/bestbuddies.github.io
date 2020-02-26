@@ -7,7 +7,7 @@ import Api from './api';
 import '../../node_modules/sharer.js/sharer.min';
 import './slider';
 import config from './config';
-import './video';
+import YoutubeApiRemote from './video';
 
 const popupContainer = document.querySelector('.popup');
 
@@ -25,6 +25,7 @@ const headerFunctional = new Header(document.querySelector('.header'));
 const form = new Form();
 const formPopup = new FormPopup(popupContainer);
 const successPopup = new SuccessPopup(popupContainer);
+const youtube = new YoutubeApiRemote();
 
 window.formPopup = formPopup;
 window.sucessPopup = successPopup;
@@ -101,3 +102,5 @@ document.querySelector(
 ).textContent = MAX_SUM.toLocaleString();
 form.insertToPage();
 apiGetSum();
+
+youtube.listeners();
