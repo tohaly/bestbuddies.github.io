@@ -1,7 +1,17 @@
-.lead__video{
-  background-image: url('../../../images/video__wrapper.jpg');
+.lead__video {
   width: 100%;
-  padding-top: 56%;
+  padding-top: 56.3%;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+}
+
+.lead__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
 }
