@@ -7,6 +7,7 @@ import Api from './api';
 import '../../node_modules/sharer.js/sharer.min';
 import './slider';
 import config from './config';
+import './video';
 
 const popupContainer = document.querySelector('.popup');
 
@@ -100,3 +101,5 @@ document.querySelector(
 ).textContent = MAX_SUM.toLocaleString();
 form.insertToPage();
 apiGetSum();
+
+window.onYouTubePlayerAPIReady();

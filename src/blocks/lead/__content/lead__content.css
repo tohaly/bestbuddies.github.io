@@ -1,5 +1,6 @@
-.lead__content{
+.lead__content {
   position: relative;
   max-width: 860px;
   width: 100%;
+  display: flex;
 }

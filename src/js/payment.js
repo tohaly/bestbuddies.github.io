@@ -6,7 +6,7 @@ export default function pay(amount, email, e, data) {
     {
       // options
       publicId: PUBLIC_ID, // id из личного кабинета
-      description: 'Пример оплаты (деньги сниматься не будут)', // назначение
+      description: 'Помощь ребятам на занятия спортом', // назначение
       amount, // сумма
       currency: 'RUB', // валюта
       invoiceId: '1234567', // номер заказа  (необязательно)
