@@ -89,7 +89,7 @@ document.querySelectorAll('.social__item_copy').forEach(button => {
   button.addEventListener('click', e => {
     const dummy = document.createElement('input');
     document.body.appendChild(dummy);
-    dummy.value = 'https://bestbuddies.ru/';
+    dummy.value = 'https://sport.bestbuddies.ru/';
     dummy.select();
     document.execCommand('copy');
     document.body.removeChild(dummy);
@@ -101,5 +101,3 @@ document.querySelector(
 ).textContent = MAX_SUM.toLocaleString();
 form.insertToPage();
 apiGetSum();
-
-window.onYouTubePlayerAPIReady();

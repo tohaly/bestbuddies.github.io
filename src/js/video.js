@@ -1,8 +1,6 @@
-let player;
-// eslint-disable-next-line func-names
-window.onYouTubePlayerAPIReady = function() {
-  // eslint-disable-next-line no-undef
-  player = new YT.Player('youtube-player', {
+window.onYouTubeIframeAPIReady = () => {
+  window.player = new window.YT.Player('youtube-player', {
+    videoId: '5tfGHKGXBiw',
     playerVars: {
       autoplay: 1,
       showinfo: 0,
@@ -12,7 +10,6 @@ window.onYouTubePlayerAPIReady = function() {
       controls: 0,
       playlist: '5tfGHKGXBiw',
     },
-    videoId: '5tfGHKGXBiw',
   });
 };
 
@@ -23,8 +20,8 @@ const buttonControl = () => {
   playYbutt.classList.add('lead__button_hidden');
   iframe.classList.add('lead__iframe_visible');
   palceholder.classList.add('lead__video_without-img');
-  player.playVideoAt();
-  player.unMute();
+  window.player.playVideoAt();
+  window.player.unMute();
 };
 
 document
