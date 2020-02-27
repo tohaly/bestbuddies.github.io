@@ -12,7 +12,7 @@ export default class Header {
     this.socialBarHeader.classList.remove('social__list_hidden');
   }
 
-  socialBarOff() {
+  socialBarOff(event) {
     if (
       event.target.classList[0] !== 'header__sahre-icon' &&
       event.target.classList[0] !== 'social__list'
@@ -23,24 +23,27 @@ export default class Header {
   }
 
   headerOff() {
-    if (pageYOffset - 120 > document.querySelector('.estimates').offsetTop) {
+    if (
+      window.pageYOffset - 120 >
+      document.querySelector('.estimates').offsetTop
+    ) {
       this.element.classList.add('header_up');
     }
   }
 
   headerOn() {
-    if (pageYOffset === 0) {
+    if (window.pageYOffset === 0) {
       this.element.classList.remove('header_up');
     }
   }
 
   listeners() {
-    this.shareIcon.addEventListener('click', event => {
+    this.shareIcon.addEventListener('click', () => {
       this.socialBarOn();
     });
 
     document.addEventListener('click', event => {
-      this.socialBarOff();
+      this.socialBarOff(event);
     });
 
     document.addEventListener('scroll', () => {
