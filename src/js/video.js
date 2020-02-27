@@ -9,6 +9,7 @@ window.onYouTubeIframeAPIReady = () => {
       loop: 1,
       controls: 0,
       playlist: '5tfGHKGXBiw',
+      origin: window.location.href,
     },
   });
 };
@@ -16,6 +17,7 @@ window.onYouTubeIframeAPIReady = () => {
 export default class YoutubeApiRemote {
   constructor() {
     this.playButton = document.querySelector('.lead__button');
+    this.fixBugWithLoad();
   }
 
   getUnmutedVideo() {
@@ -26,6 +28,15 @@ export default class YoutubeApiRemote {
     palceholder.classList.add('lead__video_without-img');
     window.player.playVideoAt();
     window.player.unMute();
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  fixBugWithLoad() {
+    return setTimeout(() => {
+      if (!window.player) {
+        window.onYouTubeIframeAPIReady();
+      }
+    }, 1000);
   }
 
   listeners() {
