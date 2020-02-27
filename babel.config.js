@@ -7,13 +7,11 @@ const presets = [
         firefox: '60',
         chrome: '64',
         safari: '11.1',
-      },
-      useBuiltIns: 'usage',
-      corejs: '3.0.0',
-      targets: {
         esmodules: true,
         ie: '11',
       },
+      useBuiltIns: 'usage',
+      corejs: '3.4.1',
     },
   ],
 ];

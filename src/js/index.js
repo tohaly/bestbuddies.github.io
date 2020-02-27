@@ -80,7 +80,7 @@ document.querySelector('.up-button').addEventListener('click', event => {
     window.scrollBy(0, -100);
   }, 10);
   document.addEventListener('scroll', () => {
-    if (pageYOffset === 0) {
+    if (window.pageYOffset === 0) {
       clearInterval(timeOut);
     }
   });
@@ -102,5 +102,3 @@ document.querySelector(
 ).textContent = MAX_SUM.toLocaleString();
 form.insertToPage();
 apiGetSum();
-
-youtube.listeners();

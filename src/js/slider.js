@@ -6,6 +6,7 @@ const slider = tns({
   controls: false,
   navContainer: '.slider-remote__navigation',
   swipeAngle: '45',
+  mouseDrag: true,
 });
 
 document
