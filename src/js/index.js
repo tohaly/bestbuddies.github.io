@@ -55,13 +55,13 @@ function apiGetSum() {
     .catch(res => alert(res));
 }
 
-function onSuccess(e, amount, email) {
+function onSuccess(e, amount, email, name, data) {
   if (e.target.closest('.popup')) {
     formPopup.close();
   }
   successPopup.open();
   api
-    .addDonation(amount, email)
+    .addDonation(amount, email, name, data)
     .then(() => apiGetSum())
     .catch(err => console.log(err));
 }

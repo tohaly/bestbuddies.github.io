@@ -1,6 +1,6 @@
 import { PUBLIC_ID, onSuccess } from './index';
 
-export default function pay(amount, email, e, data) {
+export default function pay(amount, email, e, name, data) {
   const widget = new cp.CloudPayments();
   widget.charge(
     {
@@ -18,7 +18,7 @@ export default function pay(amount, email, e, data) {
       data,
     },
     function() {
-      onSuccess(e, amount, email);
+      onSuccess(e, amount, email, name, data);
     },
     function() {
       alert('Ошибка оплаты, попробуйте еще раз');
