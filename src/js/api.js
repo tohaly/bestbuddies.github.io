@@ -18,13 +18,16 @@ export default class Api {
     }).then(res => this.getJSONResponse(res));
   }
 
-  addDonation(amount, email) {
+  addDonation(amount, email, name, data) {
     return fetch(`${this.baseUrl}`, {
       method: 'POST',
       body: JSON.stringify({
         donation: {
+          name,
           email,
           amount,
+          date: new Date().toLocaleString('ru-RU'),
+          type: data ? 'рекуррентный' : 'разовый',
         },
       }),
       headers: this.headers,

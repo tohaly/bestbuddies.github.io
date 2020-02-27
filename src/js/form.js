@@ -58,6 +58,7 @@ export default class Form {
     ) {
       const amount = Number(this.getSum(e));
       const email = e.target.form.elements.email.value;
+      const name = e.target.form.elements.username.value;
       if (e.target.classList.contains('popup__submit_color_purple')) {
         const data = {
           cloudPayments: {
@@ -67,9 +68,9 @@ export default class Form {
             },
           },
         };
-        this.pay(amount, email, e, data);
+        this.pay(amount, email, e, name, data);
       } else {
-        this.pay(amount, email, e);
+        this.pay(amount, email, e, name);
       }
     } else {
       this.validation.validateHandler(e);
