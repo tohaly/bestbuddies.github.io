@@ -11,6 +11,7 @@ export default function pay(amount, email, e, name, data) {
       currency: 'RUB', // валюта
       invoiceId: '1234567', // номер заказа  (необязательно)
       accountId: email, // идентификатор плательщика (необязательно)
+      email,
       skin: 'mini', // дизайн виджета
       data: {
         myProp: 'myProp value', // произвольный набор параметров
