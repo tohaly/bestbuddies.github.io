@@ -1,5 +1,7 @@
 .lead__button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   width: 184px;
   height: 56px;
@@ -14,7 +16,6 @@
   position: absolute;
   left: 5%;
   bottom: 5%;
-  padding-top: 6px;
   cursor: pointer;
   z-index: 2;
 }
