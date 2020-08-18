@@ -15,8 +15,7 @@ Cсылка на проект https://sport.bestbuddies.ru/.
 
 ## Что было сделано мной в данном пректе
 
-- Блоки Header, Lead, Description, Slder, Estimates, вся логика к ним;
-- Настройка WebPack.
+- Блоки Header, Lead, Description, Slder, Estimates, вся логика к ним.
 
 
 ## Используемые технологии:
