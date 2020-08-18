@@ -15,7 +15,11 @@ Cсылка на проект https://sport.bestbuddies.ru/.
 
 ## Что было сделано мной в данном пректе
 
-- Блоки Header, Lead, Description, Slder, Estimates, вся логика к ним.
+- Блоки Header, Lead, Description, Slder, Estimates;
+- Логика header;
+- YoutubeApi;
+- Slider;
+- Нативный скрол вверх.
 
 
 ## Используемые технологии:
