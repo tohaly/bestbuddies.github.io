@@ -24,6 +24,7 @@ Cсылка на проект https://sport.bestbuddies.ru/.
 - Сборщик: WebPack;
 - Транспиляция: Babel;
 - Кодстайлинг: Prettier, Eslint;
+- E-commerce: [Сloudpayments](https://www.cloudpayments.ru/);
 - Дополнительные библиотеки: [Tiny slider](https://github.com/ganlanyuan/tiny-slider);
 - Остальное: Youtube API, [Для статус бара используется Sheety](https://sheety.co/);
 
